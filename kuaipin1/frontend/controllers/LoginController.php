@@ -47,8 +47,8 @@ class LoginController extends Controller
         if($yan_code==""){
             $yan_code = Yii::$app->request->post('yan_code');
         }
+        session_start();
         if(!empty($_SESSION["code"])){
-           ;
             if(strtolower($_SESSION["code"])==strtolower($yan_code)){
                 echo 1;
             }else{
