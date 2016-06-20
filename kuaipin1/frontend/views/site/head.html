@@ -31,12 +31,54 @@
     </script>
     <script type="text/javascript" src="<?=Yii::$app->request->baseUrl?>/frontend/web/style/js/conv.js"></script>
 </head>
+<?php $arr=$this->context->actionHead();?>
 <div id="header">
 
     <div class="wrapper">
         <a href="index.php?r=index/index" class="logo">
             <img src="<?=Yii::$app->request->baseUrl?>/frontend/web/style/images/logo.png" width="229" height="43" alt="拉勾招聘-专注互联网招聘" />
         </a>
+
+        <?php if($arr['sess_uid'] && $arr['sess_idc']){?>
+        <?php if($arr['sess_idc']=='company'){ ?>
+        <ul class="reset" id="navheader">
+            <li class="current"><a href="index.php?r=index/index">首页</a></li>
+            <li ><a href="index.php?r=company_list/index" >公司</a></li>
+            <li ><a href="index.php?r=resume/list" >简历列表</a></li>
+        </ul>
+        <dl class="collapsible_menu">
+            <dt>
+                <span><?php echo $arr['uemail']?>&nbsp;</span>
+                <span class="red dn" id="noticeDot-0"></span>
+                <i></i>
+            </dt>
+            <dd><a href="index.php?r=resume/add_people">我要招人</a></dd>
+            <dd><a href="index.php?r=user/update">帐号设置</a></dd>
+            <dd class="logout"><a rel="nofollow" href="index.php?r=login/index">退出</a></dd>
+        </dl>
+        <?php } ?>
+
+        <?php if($arr['sess_idc']=='person'){ ?>
+        <ul class="reset" id="navheader">
+            <li class="current"><a href="index.php?r=index/index">首页</a></li>
+            <li ><a href="index.php?r=company_list/index" >公司</a></li>
+            <li ><a href="index.php?r=my_resume/make" rel="nofollow">制作简历</a></li>
+        </ul>
+        <dl class="collapsible_menu">
+            <dt>
+                <span><?php echo $arr['uemail']?>&nbsp;</span>
+                <span class="red dn" id="noticeDot-0"></span>
+                <i></i>
+            </dt>
+            <dd><a rel="nofollow" href="index.php?r=my_resume_list/index">我的简历</a></dd>
+            <dd><a href="index.php?r=job_read/job">我收藏的职位</a></dd>
+            <dd class="btm"><a href="index.php?r=job_read/read">我的订阅</a></dd>
+            <dd><a href="index.php?r=user/update">帐号设置</a></dd>
+            <dd class="logout"><a rel="nofollow" href="index.php?r=login/index">退出</a></dd>
+        </dl>
+        <?php } ?>
+
+        <?php }else{ ?>
         <ul class="reset" id="navheader">
             <li class="current"><a href="index.php?r=index/index">首页</a></li>
             <li ><a href="index.php?r=company_list/index" >公司</a></li>
@@ -44,32 +86,21 @@
             <li ><a href="index.php?r=my_resume/make" rel="nofollow">制作简历</a></li>
             <li ><a href="index.php?r=job/job_make" rel="nofollow">发布职位</a></li>
         </ul>
-        <?php if(!'jason'){?>
         <ul class="loginTop">
             <li><a href="index.php?r=login/index" rel="nofollow">登录</a></li>
             <li>|</li>
             <li><a href="index.php?r=login/register" rel="nofollow">注册</a></li>
         </ul>
-        <?php }else{?>
-        <dl class="collapsible_menu">
-            <dt>
-                <span>jason&nbsp;</span>
-                <span class="red dn" id="noticeDot-0"></span>
-                <i></i>
-            </dt>
-            <dd><a rel="nofollow" href="index.php?r=my_resume_list/index">我的简历</a></dd>
-            <dd><a href="index.php?r=job_read/job">我收藏的职位</a></dd>
-            <dd class="btm"><a href="index.php?r=job_read/read">我的订阅</a></dd>
-            <dd><a href="index.php?r=resume/add_people">我要招人</a></dd>
-            <dd><a href="index.php?r=user/update">帐号设置</a></dd>
-            <dd class="logout"><a rel="nofollow" href="index.php?r=login/index">退出</a></dd>
-        </dl>
+        <?php } ?>
+
         <div class="dn" id="noticeTip">
             <span class="bot"></span>
             <span class="top"></span>
             <a target="_blank" href="delivery.html"><strong>0</strong>条新投递反馈</a>
             <a class="closeNT" href="javascript:;"></a>
         </div>
-        <?php }?>
     </div>
 </div>
+
+
+
