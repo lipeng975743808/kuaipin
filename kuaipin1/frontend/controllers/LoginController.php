@@ -73,6 +73,7 @@ class LoginController extends Controller
      */
     public function actionLogining()
     {
+        session_start();
         //消除session
         unset($_SESSION['user']);
         unset($_SESSION['identity']);
@@ -98,7 +99,6 @@ class LoginController extends Controller
         if (!preg_match($preg_pwd, $arr['password'])) {
             $st = 4;
         } else {
-            session_start();
             if(strtolower($_SESSION["code"])==strtolower($arr['yan_code'])){
                     /**查询数据库*/
           $pwd_md5 = md5(sha1($arr['password']) . "kuaipin" . sha1($arr['email']));//加密过的
