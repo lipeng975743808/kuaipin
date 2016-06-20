@@ -32,6 +32,7 @@ class My_resume_listController extends Controller
 * 不合适简历
 */
 	public function actionNo(){
+		echo 234;
 		return $this->render('no.html');
 	}
 
