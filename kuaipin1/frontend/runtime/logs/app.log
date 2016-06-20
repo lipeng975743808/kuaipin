@@ -28981,3 +28981,1483 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1466235417.692
     'REQUEST_TIME' => 1466235417
 ]
+2016-06-20 18:52:07 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: _SESSION' in F:\shop\kuaipin\kuaipin1\frontend\controllers\LoginController.php:77
+Stack trace:
+#0 F:\shop\kuaipin\kuaipin1\frontend\controllers\LoginController.php(77): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'F:\\shop\\kuaipin...', 77, Array)
+#1 [internal function]: frontend\controllers\LoginController->actionLogining()
+#2 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#3 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#4 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('logining', Array)
+#5 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('login/logining', Array)
+#6 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 F:\shop\kuaipin\kuaipin1\index.php(18): yii\base\Application->run()
+#8 {main}
+2016-06-20 18:52:07 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'login/logining'
+]
+
+$_POST = [
+    'sel' => 'company'
+    'email' => '123456'
+    'password' => '123456'
+    'yan_code' => 'gtwa'
+]
+
+$_COOKIE = [
+    'ECS' => [
+        'visit_times' => '25'
+        'username' => '雷宇'
+        'user_id' => '12'
+        'password' => '389c6120cc59c4d251e59111d364fa5f'
+    ]
+    'Hm_lvt_5f036dd99455cb8adc9de73e2f052f72' => '1464224395,1464246347,1464763170'
+    'PHPSESSID' => '3e4pmacp21f3b5cldglusq9960'
+    '_csrf' => 'b291010f714ff317b06689c5abf28ca735a711178238cfb188b37a9fb2a735c9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"3Bdzi67chcw1PMjmzznLnWl8qzNQuIKk\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'www.shop.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:47.0) Gecko/20100101 Firefox/47.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://www.shop.com/kuaipin/kuaipin1/?r=login'
+    'CONTENT_LENGTH' => '54'
+    'HTTP_COOKIE' => 'ECS[visit_times]=25; ECS[username]=%E9%9B%B7%E5%AE%87; Hm_lvt_5f036dd99455cb8adc9de73e2f052f72=1464224395,1464246347,1464763170; ECS[user_id]=12; ECS[password]=389c6120cc59c4d251e59111d364fa5f; PHPSESSID=3e4pmacp21f3b5cldglusq9960; _csrf=b291010f714ff317b06689c5abf28ca735a711178238cfb188b37a9fb2a735c9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%223Bdzi67chcw1PMjmzznLnWl8qzNQuIKk%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;E:\\web\\Mysql\\bin;E:\\server\\mysql\\bin;C:\\Program Files\\TortoiseSVN\\bin;D:\\Program Files\\VisualSVN Server\\bin;D:\\server\\Mysqls\\bin;C:\\Program Files (x86)\\MySQL\\MySQL Server 5.5\\bin;D:\\phpStudy\\php55;E:\\git\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'www.shop.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/shop'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/shop'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'F:/shop/kuaipin/kuaipin1/index.php'
+    'REMOTE_PORT' => '11688'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=login/logining'
+    'REQUEST_URI' => '/kuaipin/kuaipin1/index.php?r=login/logining'
+    'SCRIPT_NAME' => '/kuaipin/kuaipin1/index.php'
+    'PHP_SELF' => '/kuaipin/kuaipin1/index.php'
+    'REQUEST_TIME_FLOAT' => 1466419927.283
+    'REQUEST_TIME' => 1466419927
+]
+2016-06-20 18:52:08 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: _SESSION' in F:\shop\kuaipin\kuaipin1\frontend\controllers\LoginController.php:77
+Stack trace:
+#0 F:\shop\kuaipin\kuaipin1\frontend\controllers\LoginController.php(77): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'F:\\shop\\kuaipin...', 77, Array)
+#1 [internal function]: frontend\controllers\LoginController->actionLogining()
+#2 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#3 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#4 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('logining', Array)
+#5 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('login/logining', Array)
+#6 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 F:\shop\kuaipin\kuaipin1\index.php(18): yii\base\Application->run()
+#8 {main}
+2016-06-20 18:52:08 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'login/logining'
+]
+
+$_POST = [
+    'sel' => 'company'
+    'email' => '123456'
+    'password' => '123456'
+    'yan_code' => 'gtwa'
+]
+
+$_COOKIE = [
+    'ECS' => [
+        'visit_times' => '25'
+        'username' => '雷宇'
+        'user_id' => '12'
+        'password' => '389c6120cc59c4d251e59111d364fa5f'
+    ]
+    'Hm_lvt_5f036dd99455cb8adc9de73e2f052f72' => '1464224395,1464246347,1464763170'
+    'PHPSESSID' => '3e4pmacp21f3b5cldglusq9960'
+    '_csrf' => 'b291010f714ff317b06689c5abf28ca735a711178238cfb188b37a9fb2a735c9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"3Bdzi67chcw1PMjmzznLnWl8qzNQuIKk\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'www.shop.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:47.0) Gecko/20100101 Firefox/47.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://www.shop.com/kuaipin/kuaipin1/?r=login'
+    'CONTENT_LENGTH' => '54'
+    'HTTP_COOKIE' => 'ECS[visit_times]=25; ECS[username]=%E9%9B%B7%E5%AE%87; Hm_lvt_5f036dd99455cb8adc9de73e2f052f72=1464224395,1464246347,1464763170; ECS[user_id]=12; ECS[password]=389c6120cc59c4d251e59111d364fa5f; PHPSESSID=3e4pmacp21f3b5cldglusq9960; _csrf=b291010f714ff317b06689c5abf28ca735a711178238cfb188b37a9fb2a735c9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%223Bdzi67chcw1PMjmzznLnWl8qzNQuIKk%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;E:\\web\\Mysql\\bin;E:\\server\\mysql\\bin;C:\\Program Files\\TortoiseSVN\\bin;D:\\Program Files\\VisualSVN Server\\bin;D:\\server\\Mysqls\\bin;C:\\Program Files (x86)\\MySQL\\MySQL Server 5.5\\bin;D:\\phpStudy\\php55;E:\\git\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'www.shop.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/shop'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/shop'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'F:/shop/kuaipin/kuaipin1/index.php'
+    'REMOTE_PORT' => '11707'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=login/logining'
+    'REQUEST_URI' => '/kuaipin/kuaipin1/index.php?r=login/logining'
+    'SCRIPT_NAME' => '/kuaipin/kuaipin1/index.php'
+    'PHP_SELF' => '/kuaipin/kuaipin1/index.php'
+    'REQUEST_TIME_FLOAT' => 1466419928.943
+    'REQUEST_TIME' => 1466419928
+]
+2016-06-20 18:52:09 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: _SESSION' in F:\shop\kuaipin\kuaipin1\frontend\controllers\LoginController.php:77
+Stack trace:
+#0 F:\shop\kuaipin\kuaipin1\frontend\controllers\LoginController.php(77): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'F:\\shop\\kuaipin...', 77, Array)
+#1 [internal function]: frontend\controllers\LoginController->actionLogining()
+#2 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#3 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#4 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('logining', Array)
+#5 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('login/logining', Array)
+#6 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 F:\shop\kuaipin\kuaipin1\index.php(18): yii\base\Application->run()
+#8 {main}
+2016-06-20 18:52:09 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'login/logining'
+]
+
+$_POST = [
+    'sel' => 'company'
+    'email' => '123456'
+    'password' => '123456'
+    'yan_code' => 'gtwa'
+]
+
+$_COOKIE = [
+    'ECS' => [
+        'visit_times' => '25'
+        'username' => '雷宇'
+        'user_id' => '12'
+        'password' => '389c6120cc59c4d251e59111d364fa5f'
+    ]
+    'Hm_lvt_5f036dd99455cb8adc9de73e2f052f72' => '1464224395,1464246347,1464763170'
+    'PHPSESSID' => '3e4pmacp21f3b5cldglusq9960'
+    '_csrf' => 'b291010f714ff317b06689c5abf28ca735a711178238cfb188b37a9fb2a735c9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"3Bdzi67chcw1PMjmzznLnWl8qzNQuIKk\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'www.shop.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:47.0) Gecko/20100101 Firefox/47.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://www.shop.com/kuaipin/kuaipin1/?r=login'
+    'CONTENT_LENGTH' => '54'
+    'HTTP_COOKIE' => 'ECS[visit_times]=25; ECS[username]=%E9%9B%B7%E5%AE%87; Hm_lvt_5f036dd99455cb8adc9de73e2f052f72=1464224395,1464246347,1464763170; ECS[user_id]=12; ECS[password]=389c6120cc59c4d251e59111d364fa5f; PHPSESSID=3e4pmacp21f3b5cldglusq9960; _csrf=b291010f714ff317b06689c5abf28ca735a711178238cfb188b37a9fb2a735c9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%223Bdzi67chcw1PMjmzznLnWl8qzNQuIKk%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;E:\\web\\Mysql\\bin;E:\\server\\mysql\\bin;C:\\Program Files\\TortoiseSVN\\bin;D:\\Program Files\\VisualSVN Server\\bin;D:\\server\\Mysqls\\bin;C:\\Program Files (x86)\\MySQL\\MySQL Server 5.5\\bin;D:\\phpStudy\\php55;E:\\git\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'www.shop.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/shop'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/shop'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'F:/shop/kuaipin/kuaipin1/index.php'
+    'REMOTE_PORT' => '11711'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=login/logining'
+    'REQUEST_URI' => '/kuaipin/kuaipin1/index.php?r=login/logining'
+    'SCRIPT_NAME' => '/kuaipin/kuaipin1/index.php'
+    'PHP_SELF' => '/kuaipin/kuaipin1/index.php'
+    'REQUEST_TIME_FLOAT' => 1466419929.704
+    'REQUEST_TIME' => 1466419929
+]
+2016-06-20 18:52:10 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: _SESSION' in F:\shop\kuaipin\kuaipin1\frontend\controllers\LoginController.php:77
+Stack trace:
+#0 F:\shop\kuaipin\kuaipin1\frontend\controllers\LoginController.php(77): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'F:\\shop\\kuaipin...', 77, Array)
+#1 [internal function]: frontend\controllers\LoginController->actionLogining()
+#2 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#3 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#4 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('logining', Array)
+#5 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('login/logining', Array)
+#6 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 F:\shop\kuaipin\kuaipin1\index.php(18): yii\base\Application->run()
+#8 {main}
+2016-06-20 18:52:10 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'login/logining'
+]
+
+$_POST = [
+    'sel' => 'company'
+    'email' => '123456'
+    'password' => '123456'
+    'yan_code' => 'gtwa'
+]
+
+$_COOKIE = [
+    'ECS' => [
+        'visit_times' => '25'
+        'username' => '雷宇'
+        'user_id' => '12'
+        'password' => '389c6120cc59c4d251e59111d364fa5f'
+    ]
+    'Hm_lvt_5f036dd99455cb8adc9de73e2f052f72' => '1464224395,1464246347,1464763170'
+    'PHPSESSID' => '3e4pmacp21f3b5cldglusq9960'
+    '_csrf' => 'b291010f714ff317b06689c5abf28ca735a711178238cfb188b37a9fb2a735c9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"3Bdzi67chcw1PMjmzznLnWl8qzNQuIKk\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'www.shop.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:47.0) Gecko/20100101 Firefox/47.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://www.shop.com/kuaipin/kuaipin1/?r=login'
+    'CONTENT_LENGTH' => '54'
+    'HTTP_COOKIE' => 'ECS[visit_times]=25; ECS[username]=%E9%9B%B7%E5%AE%87; Hm_lvt_5f036dd99455cb8adc9de73e2f052f72=1464224395,1464246347,1464763170; ECS[user_id]=12; ECS[password]=389c6120cc59c4d251e59111d364fa5f; PHPSESSID=3e4pmacp21f3b5cldglusq9960; _csrf=b291010f714ff317b06689c5abf28ca735a711178238cfb188b37a9fb2a735c9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%223Bdzi67chcw1PMjmzznLnWl8qzNQuIKk%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;E:\\web\\Mysql\\bin;E:\\server\\mysql\\bin;C:\\Program Files\\TortoiseSVN\\bin;D:\\Program Files\\VisualSVN Server\\bin;D:\\server\\Mysqls\\bin;C:\\Program Files (x86)\\MySQL\\MySQL Server 5.5\\bin;D:\\phpStudy\\php55;E:\\git\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'www.shop.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/shop'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/shop'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'F:/shop/kuaipin/kuaipin1/index.php'
+    'REMOTE_PORT' => '11712'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=login/logining'
+    'REQUEST_URI' => '/kuaipin/kuaipin1/index.php?r=login/logining'
+    'SCRIPT_NAME' => '/kuaipin/kuaipin1/index.php'
+    'PHP_SELF' => '/kuaipin/kuaipin1/index.php'
+    'REQUEST_TIME_FLOAT' => 1466419929.995
+    'REQUEST_TIME' => 1466419929
+]
+2016-06-20 18:52:10 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: _SESSION' in F:\shop\kuaipin\kuaipin1\frontend\controllers\LoginController.php:77
+Stack trace:
+#0 F:\shop\kuaipin\kuaipin1\frontend\controllers\LoginController.php(77): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'F:\\shop\\kuaipin...', 77, Array)
+#1 [internal function]: frontend\controllers\LoginController->actionLogining()
+#2 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#3 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#4 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('logining', Array)
+#5 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('login/logining', Array)
+#6 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 F:\shop\kuaipin\kuaipin1\index.php(18): yii\base\Application->run()
+#8 {main}
+2016-06-20 18:52:10 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'login/logining'
+]
+
+$_POST = [
+    'sel' => 'company'
+    'email' => '123456'
+    'password' => '123456'
+    'yan_code' => 'gtwa'
+]
+
+$_COOKIE = [
+    'ECS' => [
+        'visit_times' => '25'
+        'username' => '雷宇'
+        'user_id' => '12'
+        'password' => '389c6120cc59c4d251e59111d364fa5f'
+    ]
+    'Hm_lvt_5f036dd99455cb8adc9de73e2f052f72' => '1464224395,1464246347,1464763170'
+    'PHPSESSID' => '3e4pmacp21f3b5cldglusq9960'
+    '_csrf' => 'b291010f714ff317b06689c5abf28ca735a711178238cfb188b37a9fb2a735c9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"3Bdzi67chcw1PMjmzznLnWl8qzNQuIKk\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'www.shop.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:47.0) Gecko/20100101 Firefox/47.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://www.shop.com/kuaipin/kuaipin1/?r=login'
+    'CONTENT_LENGTH' => '54'
+    'HTTP_COOKIE' => 'ECS[visit_times]=25; ECS[username]=%E9%9B%B7%E5%AE%87; Hm_lvt_5f036dd99455cb8adc9de73e2f052f72=1464224395,1464246347,1464763170; ECS[user_id]=12; ECS[password]=389c6120cc59c4d251e59111d364fa5f; PHPSESSID=3e4pmacp21f3b5cldglusq9960; _csrf=b291010f714ff317b06689c5abf28ca735a711178238cfb188b37a9fb2a735c9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%223Bdzi67chcw1PMjmzznLnWl8qzNQuIKk%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;E:\\web\\Mysql\\bin;E:\\server\\mysql\\bin;C:\\Program Files\\TortoiseSVN\\bin;D:\\Program Files\\VisualSVN Server\\bin;D:\\server\\Mysqls\\bin;C:\\Program Files (x86)\\MySQL\\MySQL Server 5.5\\bin;D:\\phpStudy\\php55;E:\\git\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'www.shop.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/shop'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/shop'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'F:/shop/kuaipin/kuaipin1/index.php'
+    'REMOTE_PORT' => '11713'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=login/logining'
+    'REQUEST_URI' => '/kuaipin/kuaipin1/index.php?r=login/logining'
+    'SCRIPT_NAME' => '/kuaipin/kuaipin1/index.php'
+    'PHP_SELF' => '/kuaipin/kuaipin1/index.php'
+    'REQUEST_TIME_FLOAT' => 1466419930.185
+    'REQUEST_TIME' => 1466419930
+]
+2016-06-20 18:52:10 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: _SESSION' in F:\shop\kuaipin\kuaipin1\frontend\controllers\LoginController.php:77
+Stack trace:
+#0 F:\shop\kuaipin\kuaipin1\frontend\controllers\LoginController.php(77): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'F:\\shop\\kuaipin...', 77, Array)
+#1 [internal function]: frontend\controllers\LoginController->actionLogining()
+#2 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#3 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#4 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('logining', Array)
+#5 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('login/logining', Array)
+#6 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 F:\shop\kuaipin\kuaipin1\index.php(18): yii\base\Application->run()
+#8 {main}
+2016-06-20 18:52:10 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'login/logining'
+]
+
+$_POST = [
+    'sel' => 'company'
+    'email' => '123456'
+    'password' => '123456'
+    'yan_code' => 'gtwa'
+]
+
+$_COOKIE = [
+    'ECS' => [
+        'visit_times' => '25'
+        'username' => '雷宇'
+        'user_id' => '12'
+        'password' => '389c6120cc59c4d251e59111d364fa5f'
+    ]
+    'Hm_lvt_5f036dd99455cb8adc9de73e2f052f72' => '1464224395,1464246347,1464763170'
+    'PHPSESSID' => '3e4pmacp21f3b5cldglusq9960'
+    '_csrf' => 'b291010f714ff317b06689c5abf28ca735a711178238cfb188b37a9fb2a735c9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"3Bdzi67chcw1PMjmzznLnWl8qzNQuIKk\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'www.shop.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:47.0) Gecko/20100101 Firefox/47.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://www.shop.com/kuaipin/kuaipin1/?r=login'
+    'CONTENT_LENGTH' => '54'
+    'HTTP_COOKIE' => 'ECS[visit_times]=25; ECS[username]=%E9%9B%B7%E5%AE%87; Hm_lvt_5f036dd99455cb8adc9de73e2f052f72=1464224395,1464246347,1464763170; ECS[user_id]=12; ECS[password]=389c6120cc59c4d251e59111d364fa5f; PHPSESSID=3e4pmacp21f3b5cldglusq9960; _csrf=b291010f714ff317b06689c5abf28ca735a711178238cfb188b37a9fb2a735c9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%223Bdzi67chcw1PMjmzznLnWl8qzNQuIKk%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;E:\\web\\Mysql\\bin;E:\\server\\mysql\\bin;C:\\Program Files\\TortoiseSVN\\bin;D:\\Program Files\\VisualSVN Server\\bin;D:\\server\\Mysqls\\bin;C:\\Program Files (x86)\\MySQL\\MySQL Server 5.5\\bin;D:\\phpStudy\\php55;E:\\git\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'www.shop.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/shop'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/shop'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'F:/shop/kuaipin/kuaipin1/index.php'
+    'REMOTE_PORT' => '11716'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=login/logining'
+    'REQUEST_URI' => '/kuaipin/kuaipin1/index.php?r=login/logining'
+    'SCRIPT_NAME' => '/kuaipin/kuaipin1/index.php'
+    'PHP_SELF' => '/kuaipin/kuaipin1/index.php'
+    'REQUEST_TIME_FLOAT' => 1466419930.386
+    'REQUEST_TIME' => 1466419930
+]
+2016-06-20 18:52:10 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: _SESSION' in F:\shop\kuaipin\kuaipin1\frontend\controllers\LoginController.php:77
+Stack trace:
+#0 F:\shop\kuaipin\kuaipin1\frontend\controllers\LoginController.php(77): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'F:\\shop\\kuaipin...', 77, Array)
+#1 [internal function]: frontend\controllers\LoginController->actionLogining()
+#2 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#3 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#4 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('logining', Array)
+#5 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('login/logining', Array)
+#6 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 F:\shop\kuaipin\kuaipin1\index.php(18): yii\base\Application->run()
+#8 {main}
+2016-06-20 18:52:10 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'login/logining'
+]
+
+$_POST = [
+    'sel' => 'company'
+    'email' => '123456'
+    'password' => '123456'
+    'yan_code' => 'gtwa'
+]
+
+$_COOKIE = [
+    'ECS' => [
+        'visit_times' => '25'
+        'username' => '雷宇'
+        'user_id' => '12'
+        'password' => '389c6120cc59c4d251e59111d364fa5f'
+    ]
+    'Hm_lvt_5f036dd99455cb8adc9de73e2f052f72' => '1464224395,1464246347,1464763170'
+    'PHPSESSID' => '3e4pmacp21f3b5cldglusq9960'
+    '_csrf' => 'b291010f714ff317b06689c5abf28ca735a711178238cfb188b37a9fb2a735c9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"3Bdzi67chcw1PMjmzznLnWl8qzNQuIKk\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'www.shop.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:47.0) Gecko/20100101 Firefox/47.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://www.shop.com/kuaipin/kuaipin1/?r=login'
+    'CONTENT_LENGTH' => '54'
+    'HTTP_COOKIE' => 'ECS[visit_times]=25; ECS[username]=%E9%9B%B7%E5%AE%87; Hm_lvt_5f036dd99455cb8adc9de73e2f052f72=1464224395,1464246347,1464763170; ECS[user_id]=12; ECS[password]=389c6120cc59c4d251e59111d364fa5f; PHPSESSID=3e4pmacp21f3b5cldglusq9960; _csrf=b291010f714ff317b06689c5abf28ca735a711178238cfb188b37a9fb2a735c9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%223Bdzi67chcw1PMjmzznLnWl8qzNQuIKk%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;E:\\web\\Mysql\\bin;E:\\server\\mysql\\bin;C:\\Program Files\\TortoiseSVN\\bin;D:\\Program Files\\VisualSVN Server\\bin;D:\\server\\Mysqls\\bin;C:\\Program Files (x86)\\MySQL\\MySQL Server 5.5\\bin;D:\\phpStudy\\php55;E:\\git\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'www.shop.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/shop'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/shop'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'F:/shop/kuaipin/kuaipin1/index.php'
+    'REMOTE_PORT' => '11717'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=login/logining'
+    'REQUEST_URI' => '/kuaipin/kuaipin1/index.php?r=login/logining'
+    'SCRIPT_NAME' => '/kuaipin/kuaipin1/index.php'
+    'PHP_SELF' => '/kuaipin/kuaipin1/index.php'
+    'REQUEST_TIME_FLOAT' => 1466419930.547
+    'REQUEST_TIME' => 1466419930
+]
+2016-06-20 18:52:10 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: _SESSION' in F:\shop\kuaipin\kuaipin1\frontend\controllers\LoginController.php:77
+Stack trace:
+#0 F:\shop\kuaipin\kuaipin1\frontend\controllers\LoginController.php(77): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'F:\\shop\\kuaipin...', 77, Array)
+#1 [internal function]: frontend\controllers\LoginController->actionLogining()
+#2 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#3 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#4 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('logining', Array)
+#5 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('login/logining', Array)
+#6 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 F:\shop\kuaipin\kuaipin1\index.php(18): yii\base\Application->run()
+#8 {main}
+2016-06-20 18:52:10 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'login/logining'
+]
+
+$_POST = [
+    'sel' => 'company'
+    'email' => '123456'
+    'password' => '123456'
+    'yan_code' => 'gtwa'
+]
+
+$_COOKIE = [
+    'ECS' => [
+        'visit_times' => '25'
+        'username' => '雷宇'
+        'user_id' => '12'
+        'password' => '389c6120cc59c4d251e59111d364fa5f'
+    ]
+    'Hm_lvt_5f036dd99455cb8adc9de73e2f052f72' => '1464224395,1464246347,1464763170'
+    'PHPSESSID' => '3e4pmacp21f3b5cldglusq9960'
+    '_csrf' => 'b291010f714ff317b06689c5abf28ca735a711178238cfb188b37a9fb2a735c9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"3Bdzi67chcw1PMjmzznLnWl8qzNQuIKk\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'www.shop.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:47.0) Gecko/20100101 Firefox/47.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://www.shop.com/kuaipin/kuaipin1/?r=login'
+    'CONTENT_LENGTH' => '54'
+    'HTTP_COOKIE' => 'ECS[visit_times]=25; ECS[username]=%E9%9B%B7%E5%AE%87; Hm_lvt_5f036dd99455cb8adc9de73e2f052f72=1464224395,1464246347,1464763170; ECS[user_id]=12; ECS[password]=389c6120cc59c4d251e59111d364fa5f; PHPSESSID=3e4pmacp21f3b5cldglusq9960; _csrf=b291010f714ff317b06689c5abf28ca735a711178238cfb188b37a9fb2a735c9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%223Bdzi67chcw1PMjmzznLnWl8qzNQuIKk%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;E:\\web\\Mysql\\bin;E:\\server\\mysql\\bin;C:\\Program Files\\TortoiseSVN\\bin;D:\\Program Files\\VisualSVN Server\\bin;D:\\server\\Mysqls\\bin;C:\\Program Files (x86)\\MySQL\\MySQL Server 5.5\\bin;D:\\phpStudy\\php55;E:\\git\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'www.shop.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/shop'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/shop'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'F:/shop/kuaipin/kuaipin1/index.php'
+    'REMOTE_PORT' => '11718'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=login/logining'
+    'REQUEST_URI' => '/kuaipin/kuaipin1/index.php?r=login/logining'
+    'SCRIPT_NAME' => '/kuaipin/kuaipin1/index.php'
+    'PHP_SELF' => '/kuaipin/kuaipin1/index.php'
+    'REQUEST_TIME_FLOAT' => 1466419930.717
+    'REQUEST_TIME' => 1466419930
+]
+2016-06-20 18:52:35 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: _SESSION' in F:\shop\kuaipin\kuaipin1\frontend\controllers\LoginController.php:77
+Stack trace:
+#0 F:\shop\kuaipin\kuaipin1\frontend\controllers\LoginController.php(77): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'F:\\shop\\kuaipin...', 77, Array)
+#1 [internal function]: frontend\controllers\LoginController->actionLogining()
+#2 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#3 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#4 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('logining', Array)
+#5 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('login/logining', Array)
+#6 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 F:\shop\kuaipin\kuaipin1\index.php(18): yii\base\Application->run()
+#8 {main}
+2016-06-20 18:52:35 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'login/logining'
+]
+
+$_POST = [
+    'sel' => 'company'
+    'email' => '654321'
+    'password' => '654321'
+    'yan_code' => 'iqhw'
+]
+
+$_COOKIE = [
+    'ECS' => [
+        'visit_times' => '25'
+        'username' => '雷宇'
+        'user_id' => '12'
+        'password' => '389c6120cc59c4d251e59111d364fa5f'
+    ]
+    'Hm_lvt_5f036dd99455cb8adc9de73e2f052f72' => '1464224395,1464246347,1464763170'
+    'PHPSESSID' => '3e4pmacp21f3b5cldglusq9960'
+    '_csrf' => 'b291010f714ff317b06689c5abf28ca735a711178238cfb188b37a9fb2a735c9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"3Bdzi67chcw1PMjmzznLnWl8qzNQuIKk\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'www.shop.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:47.0) Gecko/20100101 Firefox/47.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://www.shop.com/kuaipin/kuaipin1/?r=login'
+    'CONTENT_LENGTH' => '54'
+    'HTTP_COOKIE' => 'ECS[visit_times]=25; ECS[username]=%E9%9B%B7%E5%AE%87; Hm_lvt_5f036dd99455cb8adc9de73e2f052f72=1464224395,1464246347,1464763170; ECS[user_id]=12; ECS[password]=389c6120cc59c4d251e59111d364fa5f; PHPSESSID=3e4pmacp21f3b5cldglusq9960; _csrf=b291010f714ff317b06689c5abf28ca735a711178238cfb188b37a9fb2a735c9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%223Bdzi67chcw1PMjmzznLnWl8qzNQuIKk%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;E:\\web\\Mysql\\bin;E:\\server\\mysql\\bin;C:\\Program Files\\TortoiseSVN\\bin;D:\\Program Files\\VisualSVN Server\\bin;D:\\server\\Mysqls\\bin;C:\\Program Files (x86)\\MySQL\\MySQL Server 5.5\\bin;D:\\phpStudy\\php55;E:\\git\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'www.shop.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/shop'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/shop'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'F:/shop/kuaipin/kuaipin1/index.php'
+    'REMOTE_PORT' => '11747'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=login/logining'
+    'REQUEST_URI' => '/kuaipin/kuaipin1/index.php?r=login/logining'
+    'SCRIPT_NAME' => '/kuaipin/kuaipin1/index.php'
+    'PHP_SELF' => '/kuaipin/kuaipin1/index.php'
+    'REQUEST_TIME_FLOAT' => 1466419955.646
+    'REQUEST_TIME' => 1466419955
+]
+2016-06-20 18:52:36 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: _SESSION' in F:\shop\kuaipin\kuaipin1\frontend\controllers\LoginController.php:77
+Stack trace:
+#0 F:\shop\kuaipin\kuaipin1\frontend\controllers\LoginController.php(77): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'F:\\shop\\kuaipin...', 77, Array)
+#1 [internal function]: frontend\controllers\LoginController->actionLogining()
+#2 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#3 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#4 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('logining', Array)
+#5 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('login/logining', Array)
+#6 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 F:\shop\kuaipin\kuaipin1\index.php(18): yii\base\Application->run()
+#8 {main}
+2016-06-20 18:52:36 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'login/logining'
+]
+
+$_POST = [
+    'sel' => 'company'
+    'email' => '654321'
+    'password' => '654321'
+    'yan_code' => 'iqhw'
+]
+
+$_COOKIE = [
+    'ECS' => [
+        'visit_times' => '25'
+        'username' => '雷宇'
+        'user_id' => '12'
+        'password' => '389c6120cc59c4d251e59111d364fa5f'
+    ]
+    'Hm_lvt_5f036dd99455cb8adc9de73e2f052f72' => '1464224395,1464246347,1464763170'
+    'PHPSESSID' => '3e4pmacp21f3b5cldglusq9960'
+    '_csrf' => 'b291010f714ff317b06689c5abf28ca735a711178238cfb188b37a9fb2a735c9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"3Bdzi67chcw1PMjmzznLnWl8qzNQuIKk\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'www.shop.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:47.0) Gecko/20100101 Firefox/47.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://www.shop.com/kuaipin/kuaipin1/?r=login'
+    'CONTENT_LENGTH' => '54'
+    'HTTP_COOKIE' => 'ECS[visit_times]=25; ECS[username]=%E9%9B%B7%E5%AE%87; Hm_lvt_5f036dd99455cb8adc9de73e2f052f72=1464224395,1464246347,1464763170; ECS[user_id]=12; ECS[password]=389c6120cc59c4d251e59111d364fa5f; PHPSESSID=3e4pmacp21f3b5cldglusq9960; _csrf=b291010f714ff317b06689c5abf28ca735a711178238cfb188b37a9fb2a735c9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%223Bdzi67chcw1PMjmzznLnWl8qzNQuIKk%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;E:\\web\\Mysql\\bin;E:\\server\\mysql\\bin;C:\\Program Files\\TortoiseSVN\\bin;D:\\Program Files\\VisualSVN Server\\bin;D:\\server\\Mysqls\\bin;C:\\Program Files (x86)\\MySQL\\MySQL Server 5.5\\bin;D:\\phpStudy\\php55;E:\\git\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'www.shop.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/shop'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/shop'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'F:/shop/kuaipin/kuaipin1/index.php'
+    'REMOTE_PORT' => '11749'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=login/logining'
+    'REQUEST_URI' => '/kuaipin/kuaipin1/index.php?r=login/logining'
+    'SCRIPT_NAME' => '/kuaipin/kuaipin1/index.php'
+    'PHP_SELF' => '/kuaipin/kuaipin1/index.php'
+    'REQUEST_TIME_FLOAT' => 1466419956.596
+    'REQUEST_TIME' => 1466419956
+]
+2016-06-20 18:52:36 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: _SESSION' in F:\shop\kuaipin\kuaipin1\frontend\controllers\LoginController.php:77
+Stack trace:
+#0 F:\shop\kuaipin\kuaipin1\frontend\controllers\LoginController.php(77): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'F:\\shop\\kuaipin...', 77, Array)
+#1 [internal function]: frontend\controllers\LoginController->actionLogining()
+#2 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#3 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#4 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('logining', Array)
+#5 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('login/logining', Array)
+#6 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 F:\shop\kuaipin\kuaipin1\index.php(18): yii\base\Application->run()
+#8 {main}
+2016-06-20 18:52:36 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'login/logining'
+]
+
+$_POST = [
+    'sel' => 'company'
+    'email' => '654321'
+    'password' => '654321'
+    'yan_code' => 'iqhw'
+]
+
+$_COOKIE = [
+    'ECS' => [
+        'visit_times' => '25'
+        'username' => '雷宇'
+        'user_id' => '12'
+        'password' => '389c6120cc59c4d251e59111d364fa5f'
+    ]
+    'Hm_lvt_5f036dd99455cb8adc9de73e2f052f72' => '1464224395,1464246347,1464763170'
+    'PHPSESSID' => '3e4pmacp21f3b5cldglusq9960'
+    '_csrf' => 'b291010f714ff317b06689c5abf28ca735a711178238cfb188b37a9fb2a735c9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"3Bdzi67chcw1PMjmzznLnWl8qzNQuIKk\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'www.shop.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:47.0) Gecko/20100101 Firefox/47.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://www.shop.com/kuaipin/kuaipin1/?r=login'
+    'CONTENT_LENGTH' => '54'
+    'HTTP_COOKIE' => 'ECS[visit_times]=25; ECS[username]=%E9%9B%B7%E5%AE%87; Hm_lvt_5f036dd99455cb8adc9de73e2f052f72=1464224395,1464246347,1464763170; ECS[user_id]=12; ECS[password]=389c6120cc59c4d251e59111d364fa5f; PHPSESSID=3e4pmacp21f3b5cldglusq9960; _csrf=b291010f714ff317b06689c5abf28ca735a711178238cfb188b37a9fb2a735c9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%223Bdzi67chcw1PMjmzznLnWl8qzNQuIKk%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;E:\\web\\Mysql\\bin;E:\\server\\mysql\\bin;C:\\Program Files\\TortoiseSVN\\bin;D:\\Program Files\\VisualSVN Server\\bin;D:\\server\\Mysqls\\bin;C:\\Program Files (x86)\\MySQL\\MySQL Server 5.5\\bin;D:\\phpStudy\\php55;E:\\git\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'www.shop.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/shop'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/shop'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'F:/shop/kuaipin/kuaipin1/index.php'
+    'REMOTE_PORT' => '11750'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=login/logining'
+    'REQUEST_URI' => '/kuaipin/kuaipin1/index.php?r=login/logining'
+    'SCRIPT_NAME' => '/kuaipin/kuaipin1/index.php'
+    'PHP_SELF' => '/kuaipin/kuaipin1/index.php'
+    'REQUEST_TIME_FLOAT' => 1466419956.826
+    'REQUEST_TIME' => 1466419956
+]
+2016-06-20 18:52:37 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: _SESSION' in F:\shop\kuaipin\kuaipin1\frontend\controllers\LoginController.php:77
+Stack trace:
+#0 F:\shop\kuaipin\kuaipin1\frontend\controllers\LoginController.php(77): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'F:\\shop\\kuaipin...', 77, Array)
+#1 [internal function]: frontend\controllers\LoginController->actionLogining()
+#2 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#3 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#4 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('logining', Array)
+#5 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('login/logining', Array)
+#6 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 F:\shop\kuaipin\kuaipin1\index.php(18): yii\base\Application->run()
+#8 {main}
+2016-06-20 18:52:37 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'login/logining'
+]
+
+$_POST = [
+    'sel' => 'company'
+    'email' => '654321'
+    'password' => '654321'
+    'yan_code' => 'iqhw'
+]
+
+$_COOKIE = [
+    'ECS' => [
+        'visit_times' => '25'
+        'username' => '雷宇'
+        'user_id' => '12'
+        'password' => '389c6120cc59c4d251e59111d364fa5f'
+    ]
+    'Hm_lvt_5f036dd99455cb8adc9de73e2f052f72' => '1464224395,1464246347,1464763170'
+    'PHPSESSID' => '3e4pmacp21f3b5cldglusq9960'
+    '_csrf' => 'b291010f714ff317b06689c5abf28ca735a711178238cfb188b37a9fb2a735c9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"3Bdzi67chcw1PMjmzznLnWl8qzNQuIKk\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'www.shop.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:47.0) Gecko/20100101 Firefox/47.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://www.shop.com/kuaipin/kuaipin1/?r=login'
+    'CONTENT_LENGTH' => '54'
+    'HTTP_COOKIE' => 'ECS[visit_times]=25; ECS[username]=%E9%9B%B7%E5%AE%87; Hm_lvt_5f036dd99455cb8adc9de73e2f052f72=1464224395,1464246347,1464763170; ECS[user_id]=12; ECS[password]=389c6120cc59c4d251e59111d364fa5f; PHPSESSID=3e4pmacp21f3b5cldglusq9960; _csrf=b291010f714ff317b06689c5abf28ca735a711178238cfb188b37a9fb2a735c9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%223Bdzi67chcw1PMjmzznLnWl8qzNQuIKk%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;E:\\web\\Mysql\\bin;E:\\server\\mysql\\bin;C:\\Program Files\\TortoiseSVN\\bin;D:\\Program Files\\VisualSVN Server\\bin;D:\\server\\Mysqls\\bin;C:\\Program Files (x86)\\MySQL\\MySQL Server 5.5\\bin;D:\\phpStudy\\php55;E:\\git\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'www.shop.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/shop'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/shop'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'F:/shop/kuaipin/kuaipin1/index.php'
+    'REMOTE_PORT' => '11751'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=login/logining'
+    'REQUEST_URI' => '/kuaipin/kuaipin1/index.php?r=login/logining'
+    'SCRIPT_NAME' => '/kuaipin/kuaipin1/index.php'
+    'PHP_SELF' => '/kuaipin/kuaipin1/index.php'
+    'REQUEST_TIME_FLOAT' => 1466419957.019
+    'REQUEST_TIME' => 1466419957
+]
+2016-06-20 18:52:37 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: _SESSION' in F:\shop\kuaipin\kuaipin1\frontend\controllers\LoginController.php:77
+Stack trace:
+#0 F:\shop\kuaipin\kuaipin1\frontend\controllers\LoginController.php(77): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'F:\\shop\\kuaipin...', 77, Array)
+#1 [internal function]: frontend\controllers\LoginController->actionLogining()
+#2 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#3 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#4 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('logining', Array)
+#5 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('login/logining', Array)
+#6 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 F:\shop\kuaipin\kuaipin1\index.php(18): yii\base\Application->run()
+#8 {main}
+2016-06-20 18:52:37 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'login/logining'
+]
+
+$_POST = [
+    'sel' => 'company'
+    'email' => '654321'
+    'password' => '654321'
+    'yan_code' => 'iqhw'
+]
+
+$_COOKIE = [
+    'ECS' => [
+        'visit_times' => '25'
+        'username' => '雷宇'
+        'user_id' => '12'
+        'password' => '389c6120cc59c4d251e59111d364fa5f'
+    ]
+    'Hm_lvt_5f036dd99455cb8adc9de73e2f052f72' => '1464224395,1464246347,1464763170'
+    'PHPSESSID' => '3e4pmacp21f3b5cldglusq9960'
+    '_csrf' => 'b291010f714ff317b06689c5abf28ca735a711178238cfb188b37a9fb2a735c9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"3Bdzi67chcw1PMjmzznLnWl8qzNQuIKk\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'www.shop.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:47.0) Gecko/20100101 Firefox/47.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://www.shop.com/kuaipin/kuaipin1/?r=login'
+    'CONTENT_LENGTH' => '54'
+    'HTTP_COOKIE' => 'ECS[visit_times]=25; ECS[username]=%E9%9B%B7%E5%AE%87; Hm_lvt_5f036dd99455cb8adc9de73e2f052f72=1464224395,1464246347,1464763170; ECS[user_id]=12; ECS[password]=389c6120cc59c4d251e59111d364fa5f; PHPSESSID=3e4pmacp21f3b5cldglusq9960; _csrf=b291010f714ff317b06689c5abf28ca735a711178238cfb188b37a9fb2a735c9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%223Bdzi67chcw1PMjmzznLnWl8qzNQuIKk%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;E:\\web\\Mysql\\bin;E:\\server\\mysql\\bin;C:\\Program Files\\TortoiseSVN\\bin;D:\\Program Files\\VisualSVN Server\\bin;D:\\server\\Mysqls\\bin;C:\\Program Files (x86)\\MySQL\\MySQL Server 5.5\\bin;D:\\phpStudy\\php55;E:\\git\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'www.shop.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/shop'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/shop'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'F:/shop/kuaipin/kuaipin1/index.php'
+    'REMOTE_PORT' => '11752'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=login/logining'
+    'REQUEST_URI' => '/kuaipin/kuaipin1/index.php?r=login/logining'
+    'SCRIPT_NAME' => '/kuaipin/kuaipin1/index.php'
+    'PHP_SELF' => '/kuaipin/kuaipin1/index.php'
+    'REQUEST_TIME_FLOAT' => 1466419957.22
+    'REQUEST_TIME' => 1466419957
+]
+2016-06-20 18:52:37 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: _SESSION' in F:\shop\kuaipin\kuaipin1\frontend\controllers\LoginController.php:77
+Stack trace:
+#0 F:\shop\kuaipin\kuaipin1\frontend\controllers\LoginController.php(77): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'F:\\shop\\kuaipin...', 77, Array)
+#1 [internal function]: frontend\controllers\LoginController->actionLogining()
+#2 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#3 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#4 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('logining', Array)
+#5 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('login/logining', Array)
+#6 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 F:\shop\kuaipin\kuaipin1\index.php(18): yii\base\Application->run()
+#8 {main}
+2016-06-20 18:52:37 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'login/logining'
+]
+
+$_POST = [
+    'sel' => 'company'
+    'email' => '654321'
+    'password' => '654321'
+    'yan_code' => 'iqhw'
+]
+
+$_COOKIE = [
+    'ECS' => [
+        'visit_times' => '25'
+        'username' => '雷宇'
+        'user_id' => '12'
+        'password' => '389c6120cc59c4d251e59111d364fa5f'
+    ]
+    'Hm_lvt_5f036dd99455cb8adc9de73e2f052f72' => '1464224395,1464246347,1464763170'
+    'PHPSESSID' => '3e4pmacp21f3b5cldglusq9960'
+    '_csrf' => 'b291010f714ff317b06689c5abf28ca735a711178238cfb188b37a9fb2a735c9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"3Bdzi67chcw1PMjmzznLnWl8qzNQuIKk\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'www.shop.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:47.0) Gecko/20100101 Firefox/47.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://www.shop.com/kuaipin/kuaipin1/?r=login'
+    'CONTENT_LENGTH' => '54'
+    'HTTP_COOKIE' => 'ECS[visit_times]=25; ECS[username]=%E9%9B%B7%E5%AE%87; Hm_lvt_5f036dd99455cb8adc9de73e2f052f72=1464224395,1464246347,1464763170; ECS[user_id]=12; ECS[password]=389c6120cc59c4d251e59111d364fa5f; PHPSESSID=3e4pmacp21f3b5cldglusq9960; _csrf=b291010f714ff317b06689c5abf28ca735a711178238cfb188b37a9fb2a735c9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%223Bdzi67chcw1PMjmzznLnWl8qzNQuIKk%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;E:\\web\\Mysql\\bin;E:\\server\\mysql\\bin;C:\\Program Files\\TortoiseSVN\\bin;D:\\Program Files\\VisualSVN Server\\bin;D:\\server\\Mysqls\\bin;C:\\Program Files (x86)\\MySQL\\MySQL Server 5.5\\bin;D:\\phpStudy\\php55;E:\\git\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'www.shop.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/shop'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/shop'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'F:/shop/kuaipin/kuaipin1/index.php'
+    'REMOTE_PORT' => '11753'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=login/logining'
+    'REQUEST_URI' => '/kuaipin/kuaipin1/index.php?r=login/logining'
+    'SCRIPT_NAME' => '/kuaipin/kuaipin1/index.php'
+    'PHP_SELF' => '/kuaipin/kuaipin1/index.php'
+    'REQUEST_TIME_FLOAT' => 1466419957.412
+    'REQUEST_TIME' => 1466419957
+]
+2016-06-20 18:52:37 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: _SESSION' in F:\shop\kuaipin\kuaipin1\frontend\controllers\LoginController.php:77
+Stack trace:
+#0 F:\shop\kuaipin\kuaipin1\frontend\controllers\LoginController.php(77): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'F:\\shop\\kuaipin...', 77, Array)
+#1 [internal function]: frontend\controllers\LoginController->actionLogining()
+#2 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#3 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#4 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('logining', Array)
+#5 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('login/logining', Array)
+#6 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 F:\shop\kuaipin\kuaipin1\index.php(18): yii\base\Application->run()
+#8 {main}
+2016-06-20 18:52:37 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'login/logining'
+]
+
+$_POST = [
+    'sel' => 'company'
+    'email' => '654321'
+    'password' => '654321'
+    'yan_code' => 'iqhw'
+]
+
+$_COOKIE = [
+    'ECS' => [
+        'visit_times' => '25'
+        'username' => '雷宇'
+        'user_id' => '12'
+        'password' => '389c6120cc59c4d251e59111d364fa5f'
+    ]
+    'Hm_lvt_5f036dd99455cb8adc9de73e2f052f72' => '1464224395,1464246347,1464763170'
+    'PHPSESSID' => '3e4pmacp21f3b5cldglusq9960'
+    '_csrf' => 'b291010f714ff317b06689c5abf28ca735a711178238cfb188b37a9fb2a735c9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"3Bdzi67chcw1PMjmzznLnWl8qzNQuIKk\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'www.shop.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:47.0) Gecko/20100101 Firefox/47.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://www.shop.com/kuaipin/kuaipin1/?r=login'
+    'CONTENT_LENGTH' => '54'
+    'HTTP_COOKIE' => 'ECS[visit_times]=25; ECS[username]=%E9%9B%B7%E5%AE%87; Hm_lvt_5f036dd99455cb8adc9de73e2f052f72=1464224395,1464246347,1464763170; ECS[user_id]=12; ECS[password]=389c6120cc59c4d251e59111d364fa5f; PHPSESSID=3e4pmacp21f3b5cldglusq9960; _csrf=b291010f714ff317b06689c5abf28ca735a711178238cfb188b37a9fb2a735c9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%223Bdzi67chcw1PMjmzznLnWl8qzNQuIKk%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;E:\\web\\Mysql\\bin;E:\\server\\mysql\\bin;C:\\Program Files\\TortoiseSVN\\bin;D:\\Program Files\\VisualSVN Server\\bin;D:\\server\\Mysqls\\bin;C:\\Program Files (x86)\\MySQL\\MySQL Server 5.5\\bin;D:\\phpStudy\\php55;E:\\git\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'www.shop.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/shop'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/shop'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'F:/shop/kuaipin/kuaipin1/index.php'
+    'REMOTE_PORT' => '11754'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=login/logining'
+    'REQUEST_URI' => '/kuaipin/kuaipin1/index.php?r=login/logining'
+    'SCRIPT_NAME' => '/kuaipin/kuaipin1/index.php'
+    'PHP_SELF' => '/kuaipin/kuaipin1/index.php'
+    'REQUEST_TIME_FLOAT' => 1466419957.582
+    'REQUEST_TIME' => 1466419957
+]
+2016-06-20 18:52:37 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: _SESSION' in F:\shop\kuaipin\kuaipin1\frontend\controllers\LoginController.php:77
+Stack trace:
+#0 F:\shop\kuaipin\kuaipin1\frontend\controllers\LoginController.php(77): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'F:\\shop\\kuaipin...', 77, Array)
+#1 [internal function]: frontend\controllers\LoginController->actionLogining()
+#2 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#3 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#4 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('logining', Array)
+#5 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('login/logining', Array)
+#6 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 F:\shop\kuaipin\kuaipin1\index.php(18): yii\base\Application->run()
+#8 {main}
+2016-06-20 18:52:37 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'login/logining'
+]
+
+$_POST = [
+    'sel' => 'company'
+    'email' => '654321'
+    'password' => '654321'
+    'yan_code' => 'iqhw'
+]
+
+$_COOKIE = [
+    'ECS' => [
+        'visit_times' => '25'
+        'username' => '雷宇'
+        'user_id' => '12'
+        'password' => '389c6120cc59c4d251e59111d364fa5f'
+    ]
+    'Hm_lvt_5f036dd99455cb8adc9de73e2f052f72' => '1464224395,1464246347,1464763170'
+    'PHPSESSID' => '3e4pmacp21f3b5cldglusq9960'
+    '_csrf' => 'b291010f714ff317b06689c5abf28ca735a711178238cfb188b37a9fb2a735c9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"3Bdzi67chcw1PMjmzznLnWl8qzNQuIKk\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'www.shop.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:47.0) Gecko/20100101 Firefox/47.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://www.shop.com/kuaipin/kuaipin1/?r=login'
+    'CONTENT_LENGTH' => '54'
+    'HTTP_COOKIE' => 'ECS[visit_times]=25; ECS[username]=%E9%9B%B7%E5%AE%87; Hm_lvt_5f036dd99455cb8adc9de73e2f052f72=1464224395,1464246347,1464763170; ECS[user_id]=12; ECS[password]=389c6120cc59c4d251e59111d364fa5f; PHPSESSID=3e4pmacp21f3b5cldglusq9960; _csrf=b291010f714ff317b06689c5abf28ca735a711178238cfb188b37a9fb2a735c9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%223Bdzi67chcw1PMjmzznLnWl8qzNQuIKk%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;E:\\web\\Mysql\\bin;E:\\server\\mysql\\bin;C:\\Program Files\\TortoiseSVN\\bin;D:\\Program Files\\VisualSVN Server\\bin;D:\\server\\Mysqls\\bin;C:\\Program Files (x86)\\MySQL\\MySQL Server 5.5\\bin;D:\\phpStudy\\php55;E:\\git\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'www.shop.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/shop'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/shop'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'F:/shop/kuaipin/kuaipin1/index.php'
+    'REMOTE_PORT' => '11755'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=login/logining'
+    'REQUEST_URI' => '/kuaipin/kuaipin1/index.php?r=login/logining'
+    'SCRIPT_NAME' => '/kuaipin/kuaipin1/index.php'
+    'PHP_SELF' => '/kuaipin/kuaipin1/index.php'
+    'REQUEST_TIME_FLOAT' => 1466419957.802
+    'REQUEST_TIME' => 1466419957
+]
+2016-06-20 18:52:38 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: _SESSION' in F:\shop\kuaipin\kuaipin1\frontend\controllers\LoginController.php:77
+Stack trace:
+#0 F:\shop\kuaipin\kuaipin1\frontend\controllers\LoginController.php(77): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'F:\\shop\\kuaipin...', 77, Array)
+#1 [internal function]: frontend\controllers\LoginController->actionLogining()
+#2 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#3 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#4 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('logining', Array)
+#5 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('login/logining', Array)
+#6 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 F:\shop\kuaipin\kuaipin1\index.php(18): yii\base\Application->run()
+#8 {main}
+2016-06-20 18:52:38 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'login/logining'
+]
+
+$_POST = [
+    'sel' => 'company'
+    'email' => '654321'
+    'password' => '654321'
+    'yan_code' => 'iqhw'
+]
+
+$_COOKIE = [
+    'ECS' => [
+        'visit_times' => '25'
+        'username' => '雷宇'
+        'user_id' => '12'
+        'password' => '389c6120cc59c4d251e59111d364fa5f'
+    ]
+    'Hm_lvt_5f036dd99455cb8adc9de73e2f052f72' => '1464224395,1464246347,1464763170'
+    'PHPSESSID' => '3e4pmacp21f3b5cldglusq9960'
+    '_csrf' => 'b291010f714ff317b06689c5abf28ca735a711178238cfb188b37a9fb2a735c9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"3Bdzi67chcw1PMjmzznLnWl8qzNQuIKk\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'www.shop.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:47.0) Gecko/20100101 Firefox/47.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://www.shop.com/kuaipin/kuaipin1/?r=login'
+    'CONTENT_LENGTH' => '54'
+    'HTTP_COOKIE' => 'ECS[visit_times]=25; ECS[username]=%E9%9B%B7%E5%AE%87; Hm_lvt_5f036dd99455cb8adc9de73e2f052f72=1464224395,1464246347,1464763170; ECS[user_id]=12; ECS[password]=389c6120cc59c4d251e59111d364fa5f; PHPSESSID=3e4pmacp21f3b5cldglusq9960; _csrf=b291010f714ff317b06689c5abf28ca735a711178238cfb188b37a9fb2a735c9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%223Bdzi67chcw1PMjmzznLnWl8qzNQuIKk%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;E:\\web\\Mysql\\bin;E:\\server\\mysql\\bin;C:\\Program Files\\TortoiseSVN\\bin;D:\\Program Files\\VisualSVN Server\\bin;D:\\server\\Mysqls\\bin;C:\\Program Files (x86)\\MySQL\\MySQL Server 5.5\\bin;D:\\phpStudy\\php55;E:\\git\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'www.shop.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/shop'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/shop'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'F:/shop/kuaipin/kuaipin1/index.php'
+    'REMOTE_PORT' => '11756'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=login/logining'
+    'REQUEST_URI' => '/kuaipin/kuaipin1/index.php?r=login/logining'
+    'SCRIPT_NAME' => '/kuaipin/kuaipin1/index.php'
+    'PHP_SELF' => '/kuaipin/kuaipin1/index.php'
+    'REQUEST_TIME_FLOAT' => 1466419958.003
+    'REQUEST_TIME' => 1466419958
+]
+2016-06-20 18:52:42 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: _SESSION' in F:\shop\kuaipin\kuaipin1\frontend\controllers\LoginController.php:77
+Stack trace:
+#0 F:\shop\kuaipin\kuaipin1\frontend\controllers\LoginController.php(77): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'F:\\shop\\kuaipin...', 77, Array)
+#1 [internal function]: frontend\controllers\LoginController->actionLogining()
+#2 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#3 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#4 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('logining', Array)
+#5 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('login/logining', Array)
+#6 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 F:\shop\kuaipin\kuaipin1\index.php(18): yii\base\Application->run()
+#8 {main}
+2016-06-20 18:52:42 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'login/logining'
+]
+
+$_POST = [
+    'sel' => 'company'
+    'email' => '654321'
+    'password' => '654321'
+    'yan_code' => 'iqhw'
+]
+
+$_COOKIE = [
+    'ECS' => [
+        'visit_times' => '25'
+        'username' => '雷宇'
+        'user_id' => '12'
+        'password' => '389c6120cc59c4d251e59111d364fa5f'
+    ]
+    'Hm_lvt_5f036dd99455cb8adc9de73e2f052f72' => '1464224395,1464246347,1464763170'
+    'PHPSESSID' => '3e4pmacp21f3b5cldglusq9960'
+    '_csrf' => 'b291010f714ff317b06689c5abf28ca735a711178238cfb188b37a9fb2a735c9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"3Bdzi67chcw1PMjmzznLnWl8qzNQuIKk\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'www.shop.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:47.0) Gecko/20100101 Firefox/47.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://www.shop.com/kuaipin/kuaipin1/?r=login'
+    'CONTENT_LENGTH' => '54'
+    'HTTP_COOKIE' => 'ECS[visit_times]=25; ECS[username]=%E9%9B%B7%E5%AE%87; Hm_lvt_5f036dd99455cb8adc9de73e2f052f72=1464224395,1464246347,1464763170; ECS[user_id]=12; ECS[password]=389c6120cc59c4d251e59111d364fa5f; PHPSESSID=3e4pmacp21f3b5cldglusq9960; _csrf=b291010f714ff317b06689c5abf28ca735a711178238cfb188b37a9fb2a735c9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%223Bdzi67chcw1PMjmzznLnWl8qzNQuIKk%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;E:\\web\\Mysql\\bin;E:\\server\\mysql\\bin;C:\\Program Files\\TortoiseSVN\\bin;D:\\Program Files\\VisualSVN Server\\bin;D:\\server\\Mysqls\\bin;C:\\Program Files (x86)\\MySQL\\MySQL Server 5.5\\bin;D:\\phpStudy\\php55;E:\\git\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'www.shop.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/shop'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/shop'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'F:/shop/kuaipin/kuaipin1/index.php'
+    'REMOTE_PORT' => '11772'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=login/logining'
+    'REQUEST_URI' => '/kuaipin/kuaipin1/index.php?r=login/logining'
+    'SCRIPT_NAME' => '/kuaipin/kuaipin1/index.php'
+    'PHP_SELF' => '/kuaipin/kuaipin1/index.php'
+    'REQUEST_TIME_FLOAT' => 1466419962.672
+    'REQUEST_TIME' => 1466419962
+]
+2016-06-20 18:52:43 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: _SESSION' in F:\shop\kuaipin\kuaipin1\frontend\controllers\LoginController.php:77
+Stack trace:
+#0 F:\shop\kuaipin\kuaipin1\frontend\controllers\LoginController.php(77): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'F:\\shop\\kuaipin...', 77, Array)
+#1 [internal function]: frontend\controllers\LoginController->actionLogining()
+#2 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#3 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#4 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('logining', Array)
+#5 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('login/logining', Array)
+#6 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 F:\shop\kuaipin\kuaipin1\index.php(18): yii\base\Application->run()
+#8 {main}
+2016-06-20 18:52:43 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'login/logining'
+]
+
+$_POST = [
+    'sel' => 'company'
+    'email' => '654321'
+    'password' => '654321'
+    'yan_code' => 'iqhw'
+]
+
+$_COOKIE = [
+    'ECS' => [
+        'visit_times' => '25'
+        'username' => '雷宇'
+        'user_id' => '12'
+        'password' => '389c6120cc59c4d251e59111d364fa5f'
+    ]
+    'Hm_lvt_5f036dd99455cb8adc9de73e2f052f72' => '1464224395,1464246347,1464763170'
+    'PHPSESSID' => '3e4pmacp21f3b5cldglusq9960'
+    '_csrf' => 'b291010f714ff317b06689c5abf28ca735a711178238cfb188b37a9fb2a735c9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"3Bdzi67chcw1PMjmzznLnWl8qzNQuIKk\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'www.shop.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:47.0) Gecko/20100101 Firefox/47.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://www.shop.com/kuaipin/kuaipin1/?r=login'
+    'CONTENT_LENGTH' => '54'
+    'HTTP_COOKIE' => 'ECS[visit_times]=25; ECS[username]=%E9%9B%B7%E5%AE%87; Hm_lvt_5f036dd99455cb8adc9de73e2f052f72=1464224395,1464246347,1464763170; ECS[user_id]=12; ECS[password]=389c6120cc59c4d251e59111d364fa5f; PHPSESSID=3e4pmacp21f3b5cldglusq9960; _csrf=b291010f714ff317b06689c5abf28ca735a711178238cfb188b37a9fb2a735c9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%223Bdzi67chcw1PMjmzznLnWl8qzNQuIKk%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;E:\\web\\Mysql\\bin;E:\\server\\mysql\\bin;C:\\Program Files\\TortoiseSVN\\bin;D:\\Program Files\\VisualSVN Server\\bin;D:\\server\\Mysqls\\bin;C:\\Program Files (x86)\\MySQL\\MySQL Server 5.5\\bin;D:\\phpStudy\\php55;E:\\git\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'www.shop.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/shop'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/shop'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'F:/shop/kuaipin/kuaipin1/index.php'
+    'REMOTE_PORT' => '11775'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=login/logining'
+    'REQUEST_URI' => '/kuaipin/kuaipin1/index.php?r=login/logining'
+    'SCRIPT_NAME' => '/kuaipin/kuaipin1/index.php'
+    'PHP_SELF' => '/kuaipin/kuaipin1/index.php'
+    'REQUEST_TIME_FLOAT' => 1466419963.077
+    'REQUEST_TIME' => 1466419963
+]
+2016-06-20 18:52:43 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: _SESSION' in F:\shop\kuaipin\kuaipin1\frontend\controllers\LoginController.php:77
+Stack trace:
+#0 F:\shop\kuaipin\kuaipin1\frontend\controllers\LoginController.php(77): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'F:\\shop\\kuaipin...', 77, Array)
+#1 [internal function]: frontend\controllers\LoginController->actionLogining()
+#2 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#3 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#4 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('logining', Array)
+#5 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('login/logining', Array)
+#6 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 F:\shop\kuaipin\kuaipin1\index.php(18): yii\base\Application->run()
+#8 {main}
+2016-06-20 18:52:43 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'login/logining'
+]
+
+$_POST = [
+    'sel' => 'company'
+    'email' => '654321'
+    'password' => '654321'
+    'yan_code' => 'iqhw'
+]
+
+$_COOKIE = [
+    'ECS' => [
+        'visit_times' => '25'
+        'username' => '雷宇'
+        'user_id' => '12'
+        'password' => '389c6120cc59c4d251e59111d364fa5f'
+    ]
+    'Hm_lvt_5f036dd99455cb8adc9de73e2f052f72' => '1464224395,1464246347,1464763170'
+    'PHPSESSID' => '3e4pmacp21f3b5cldglusq9960'
+    '_csrf' => 'b291010f714ff317b06689c5abf28ca735a711178238cfb188b37a9fb2a735c9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"3Bdzi67chcw1PMjmzznLnWl8qzNQuIKk\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'www.shop.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:47.0) Gecko/20100101 Firefox/47.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://www.shop.com/kuaipin/kuaipin1/?r=login'
+    'CONTENT_LENGTH' => '54'
+    'HTTP_COOKIE' => 'ECS[visit_times]=25; ECS[username]=%E9%9B%B7%E5%AE%87; Hm_lvt_5f036dd99455cb8adc9de73e2f052f72=1464224395,1464246347,1464763170; ECS[user_id]=12; ECS[password]=389c6120cc59c4d251e59111d364fa5f; PHPSESSID=3e4pmacp21f3b5cldglusq9960; _csrf=b291010f714ff317b06689c5abf28ca735a711178238cfb188b37a9fb2a735c9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%223Bdzi67chcw1PMjmzznLnWl8qzNQuIKk%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;E:\\web\\Mysql\\bin;E:\\server\\mysql\\bin;C:\\Program Files\\TortoiseSVN\\bin;D:\\Program Files\\VisualSVN Server\\bin;D:\\server\\Mysqls\\bin;C:\\Program Files (x86)\\MySQL\\MySQL Server 5.5\\bin;D:\\phpStudy\\php55;E:\\git\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'www.shop.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/shop'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/shop'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'F:/shop/kuaipin/kuaipin1/index.php'
+    'REMOTE_PORT' => '11780'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=login/logining'
+    'REQUEST_URI' => '/kuaipin/kuaipin1/index.php?r=login/logining'
+    'SCRIPT_NAME' => '/kuaipin/kuaipin1/index.php'
+    'PHP_SELF' => '/kuaipin/kuaipin1/index.php'
+    'REQUEST_TIME_FLOAT' => 1466419963.62
+    'REQUEST_TIME' => 1466419963
+]
