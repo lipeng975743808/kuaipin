@@ -25,6 +25,7 @@ class My_resume_listController extends Controller
 * 待定简历
 */
 	public function actionDaiding(){
+        echo "123";
 		return $this->render('daiding.html');
 	}
 /**
