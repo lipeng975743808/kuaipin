@@ -1,9 +1,10 @@
 <?php
 namespace frontend\controllers;
-header('content-type:text/html;charset=utf-8');
-use Yii; 
+use Yii;
 use yii\web\Controller;
 use app\models\KpWork;
+use app\models\KpUser;
+use app\models\KpCompanyRegister;
 
 /**
  * Index controller
@@ -18,13 +19,19 @@ class JobController extends Controller
  *  发布职位
  */
 	public function actionJob_make(){
-        $sql="select * from kp_work";
+ 		$session = Yii::$app->session;
+        $user=$session->get("user");
+        $identity=$session->get("identity");
+        if (empty($user) || empty($identity)) {
+            $this->redirect_message('请先登陆','error',3,"index.php?r=login/index");die;
+        }
+		 $sql="select * from kp_work";
         $arr=Yii::$app->db->createCommand($sql)->queryAll();
         $ar=$this->actionCate($arr,0,0);
         //print_r($ar);
 	    return $this->render('index.html',['a'=>$ar]);
-	}
-    public function actionCate(&$info, $child, $pid)  
+    }
+ public function actionCate(&$info, $child, $pid)  
 {  
     $child = array();  
     if(!empty($info)){//当$info中的子类还没有被移光的时候  
@@ -66,6 +73,7 @@ public function actionAdd()
         echo "<script>alert('添加失败')</script>";
     }
 }
+   
 /**
 *  有效职位
 */
@@ -132,4 +140,32 @@ public function actionAdd()
 	public function actionNopositions(){
 		return $this->render('positions.html');
 	} 
+
+
+
+    function actionHead()
+    {
+        $session = Yii::$app->session;
+        $arr['sess_uid'] = $session->get('user');
+        $arr['sess_idc'] = $session->get('identity');
+
+        if (!empty($arr['sess_uid']) && !empty($arr['sess_idc'])) {
+            if ($arr['sess_idc'] == "company") {
+                //查询出公司用户的邮箱
+                $user_info = KpCompanyRegister::find()
+                    ->where(['cr_id' => $arr['sess_uid']])
+                    ->asArray()
+                    ->one();
+                $arr['uemail'] = $user_info['cr_email'];
+            } else {
+                //查询出个人用户的邮箱
+                $user_info = KpUser::find()
+                    ->where(['u_id' => $arr['sess_uid']])
+                    ->asArray()
+                    ->one();
+                $arr['uemail'] = $user_info['user_email'];
+            }
+        }
+        return $arr;
+    }
 }

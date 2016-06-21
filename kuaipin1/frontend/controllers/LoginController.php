@@ -17,7 +17,6 @@ class LoginController extends Controller
 
 
 	public function actionIndex(){
-
 /**
  * 判断session_id 是否存在 if(存在){跳到主页面}else{跳到登录页面}
  */
@@ -49,7 +48,6 @@ class LoginController extends Controller
         }
         session_start();
         if(!empty($_SESSION["code"])){
-           ;
             if(strtolower($_SESSION["code"])==strtolower($yan_code)){
                 echo 1;
             }else{
@@ -73,8 +71,13 @@ class LoginController extends Controller
      */
     public function actionLogining()
     {
+        session_start();
+        //消除session
+        unset($_SESSION['user']);
+        unset($_SESSION['identity']);
         //接受登录值
         $arr = Yii::$app->request->post();
+
         //邮箱验证
         if ($arr['email'] == "") {
             $st = 1;
@@ -94,26 +97,51 @@ class LoginController extends Controller
         if (!preg_match($preg_pwd, $arr['password'])) {
             $st = 4;
         } else {
-            session_start();
             if(strtolower($_SESSION["code"])==strtolower($arr['yan_code'])){
                     /**查询数据库*/
-                    $pwd_md5 = md5(sha1($arr['password']) . "kuaipin" . sha1($arr['email']));//加密过的
+          $pwd_md5 = md5(sha1($arr['password']) . "kuaipin" . sha1($arr['email']));//加密过的
+                //判断是哪个类型的用户登录
+                if($arr['sel']=='person'){
                     $rows = (new \yii\db\Query())
                         ->select(['*'])
                         ->from('kp_user')
-                        ->where("user_Email='$arr[email]' and password='$pwd_md5'")
+                        ->where("user_email='$arr[email]' and password='$pwd_md5'")
                         ->one();
                     if ($rows['user_number'] != "") {
-                        $_SESSION['user'] = $rows;//登录成功，存入session
+                        $_SESSION['user'] = $rows['u_id'];//登录成功，把用户的u_id存入session
+                        $_SESSION['identity'] = $arr['sel'];//登录成功，把用户的登陆目的存入session
                         $st = 5;//密码正确
                     } else {
                         $st = 6;//用户名或密码错误
                     }
+                }elseif($arr['sel']=='company'){
+                    $rows = (new \yii\db\Query())
+                        ->select(['*'])
+                        ->from('kp_company_register')
+                        ->where("cr_email='$arr[email]' and password='$pwd_md5'")
+                        ->one();
+                    if ($rows) {
+                        $_SESSION['user'] = $rows['cr_id'];//登录成功，把用户的u_id存入session
+                        $_SESSION['identity'] = $arr['sel'];//登录成功，把用户的登陆目的存入session
+                        $st = 5;//密码正确
+                    } else {
+                        $st = 6;//用户名或密码错误
+                    }
+                }
             }else{
                 $st=7;
             }
         }
             echo $st;//ajax返回
+    }
+
+    //退出
+    public function actionLogout(){
+        //消除session
+        session_start();
+        unset($_SESSION['user']);
+        unset($_SESSION['identity']);
+        $this->redirect_message('退出成功','success',3,"index.php?r=index/index");
     }
 
 }

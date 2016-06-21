@@ -1,4 +1,4 @@
-﻿<!DOCTYPE HTML>
+<!DOCTYPE HTML>
 <html xmlns:wb="http://open.weibo.com/wb">
 <body>
 <div id="body">
@@ -20,35 +20,37 @@
         		        <?php ActiveForm::end(); ?>
        		<!--END-->
             <div class="content">
-            	<dl class="company_center_content">
-                    <dt>
-                        <h1>
-                            <em></em>
-                           有效职位 <span>（共<i style="color:#fff;font-style:normal" id="positionNumber">1</i>个）</span>                        </h1>
-                    </dt>
-                    <dd>
-                    		                    	<form id="searchForm">
-	                    		<input type="hidden" value="Publish" name="type">
-			                	<ul class="reset my_jobs">
-				                			                            	<li data-id="149594">
-		                                    <h3>
-		                                        <a target="_blank" title="随便写" href="http://www.lagou.com/jobs/149594.html">随便写</a> 
-		                                        <span>[上海]</span>
-		                                        						                        		                                    </h3>
-		                                    		                                  		<span class="receivedResumeNo"><a href="unHandleResumes.html?positionId=149594">应聘简历（1）</a></span>
-		                                  			                                    <div>兼职 / 1k-2k / 1-3年 / 硕士及以上</div>
-		                                    		                                    				                                    <div class="c9">发布时间： 2014-07-01 17:07:01</div>
-			                                    		                                    		                                    		                                    <div class="links">
-		                                    			                                       	<a class="job_refresh" href="javascript:void(0)">刷新<span>每个职位7天内只能刷新一次</span></a>
-		                                       			                                       	<a target="_blank" class="job_edit" href="create.html?positionId=149594">编辑</a>
-		                                       	<a class="job_offline" href="javascript:void(0)">下线</a>                      
-		                                        <a class="job_del" href="javascript:void(0)">删除</a>
-		                                    </div>
-		                                    		                                </li>
-	                                	                           	</ul>
-			                    			                </form>
-		                                    </dd>
-                </dl>
+<dl class="company_center_content">
+<dt>
+<h1>
+<em></em>
+有效职位 <span>（共<i style="color:#fff;font-style:normal" id="positionNumber">1</i>个）</span>                        </h1>
+</dt>
+<dd>
+<form id="searchForm">
+<input type="hidden" value="Publish" name="type">
+<ul class="reset my_jobs">
+	<?php foreach($ar as $key=>$val) { ?>
+<li data-id="149594" id="lis">
+<h3>
+<a target="_blank" title="随便写" href="http://www.lagou.com/jobs/149594.html"><?php echo $val['ci_name']?></a> 
+<span>[<?php echo $val['cj_city']?>]</span>
+</h3>
+<span class="receivedResumeNo"><a href="unHandleResumes.html?positionId=149594">应聘简历（1）</a></span>
+<div><?php echo $val['cj_character']?>/<?php echo $val['cj_low_money']?>-<?php echo $val['cj_high_money']?>/<?php echo $val['cj_experience']?>/<?php echo $val['cj_degree']?></div>
+<div class="c9">发布时间： <?php echo $val['cj_add_time']?></div>
+<div class="links">
+<a class="job_refresh" href="javascript:void(0)">刷新<span>每个职位7天内只能刷新一次</span></a>
+<a target="_blank" class="job_edit" href="create.html?positionId=149594">编辑</a>
+<a class="job_offline" href="javascript:wire(<?php echo $val['wire']?>,<?php echo $val['cj_id']?>)">下线</a>                      
+<a class="job_del" href="javascript:del(<?php echo $val['cj_id']?>)">删除</a>
+</div>
+</li>
+<?php } ?>
+</ul>
+</form>
+</dd>
+</dl>
             </div><!-- end .content -->
 <script src="<?=Yii::$app->request->baseUrl?>/frontend/web/style/js/job_list.min.js" type="text/javascript"></script> 
 			<div class="clear"></div>
@@ -69,6 +71,7 @@
 <script src="<?=Yii::$app->request->baseUrl?>/frontend/web/style/js/core.min.js" type="text/javascript"></script>
 <script src="<?=Yii::$app->request->baseUrl?>/frontend/web/style/js/popup.min.js" type="text/javascript"></script>
 <script src="<?=Yii::$app->request->baseUrl?>/frontend/web/style/js/tongji.js" type="text/javascript"></script>
+<script src="<?=Yii::$app->request->baseUrl?>/frontend/web/jquery1.8.js" type="text/javascript"></script>
 <!--  -->
 <script src="<?=Yii::$app->request->baseUrl?>/frontend/web/style/js/analytics01.js" type="text/javascript"></script><script type="text/javascript" src="<?=Yii::$app->request->baseUrl?>/frontend/web/style/js/h.js"></script>
 <script type="text/javascript">
@@ -114,5 +117,37 @@ var CallCenter = {
 };
 CallCenter.init(url);
 </script>
-
+<script>
+	function wire(wire,cj_id)
+	{
+		var data={'wi':wire,'cj_id':cj_id};
+		var url="index.php?r=job/updatewire";
+		$.get(url,data,function(msg){
+			if(msg==1)
+			{
+				location.href='index.php?r=job/positions';
+				// http://www.insist.com/kuaipin/kuaipin1/index.php?r=job/Positions
+				// http://www.insist.com/kuaipin/kuaipin1/index.php?r=job/positions
+			}else
+			{
+				alert('操作失败,请联系管理员')
+			}
+		})
+	}
+	function del(cj_id)
+	{
+		data={'id':cj_id};
+		url="index.php?r=job/deletes";
+		$.get(url,data,function(msg){
+				if(msg==1)
+				{
+					$("#lis").remove();
+				}
+				else
+				{
+					alert('操作失败,请联系管理员')
+				}
+		})
+	}
+</script>
 <div id="cboxOverlay" style="display: none;"></div><div id="colorbox" class="" role="dialog" tabindex="-1" style="display: none;"><div id="cboxWrapper"><div><div id="cboxTopLeft" style="float: left;"></div><div id="cboxTopCenter" style="float: left;"></div><div id="cboxTopRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxMiddleLeft" style="float: left;"></div><div id="cboxContent" style="float: left;"><div id="cboxTitle" style="float: left;"></div><div id="cboxCurrent" style="float: left;"></div><button type="button" id="cboxPrevious"></button><button type="button" id="cboxNext"></button><button id="cboxSlideshow"></button><div id="cboxLoadingOverlay" style="float: left;"></div><div id="cboxLoadingGraphic" style="float: left;"></div></div><div id="cboxMiddleRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxBottomLeft" style="float: left;"></div><div id="cboxBottomCenter" style="float: left;"></div><div id="cboxBottomRight" style="float: left;"></div></div></div><div style="position: absolute; width: 9999px; visibility: hidden; display: none;"></div></div></body></html>
