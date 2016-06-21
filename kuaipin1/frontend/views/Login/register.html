@@ -5,11 +5,11 @@
 <meta http-equiv="Cache-Control" content="no-siteapp" />
 <link rel="alternate" media="handheld"  />
 <!-- end 云适配 -->
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>注册-拉勾网-最专业的互联网招聘平台</title>
+
+<title>注册-会聘网-最专业的互联网招聘平台</title>
 <meta property="qc:admins" content="23635710066417756375" />
 <meta content="拉勾网是3W旗下的互联网领域垂直招聘网站,互联网职业机会尽在拉勾网" name="description">
-<meta content="拉勾,拉勾网,拉勾招聘,拉钩, 拉钩网 ,互联网招聘,拉勾互联网招聘, 移动互联网招聘, 垂直互联网招聘, 微信招聘, 微博招聘, 拉勾官网, 拉勾百科,跳槽, 高薪职位, 互联网圈子, IT招聘, 职场招聘, 猎头招聘,O2O招聘, LBS招聘, 社交招聘, 校园招聘, 校招,社会招聘,社招" name="keywords">
+<meta content="拉勾,拉勾网,拉勾招聘,会聘, 会聘网 ,互联网招聘,拉勾互联网招聘, 移动互联网招聘, 垂直互联网招聘, 微信招聘, 微博招聘, 拉勾官网, 拉勾百科,跳槽, 高薪职位, 互联网圈子, IT招聘, 职场招聘, 猎头招聘,O2O招聘, LBS招聘, 社交招聘, 校园招聘, 校招,社会招聘,社招" name="keywords">
 
 <meta name="baidu-site-verification" content="QIQ6KC1oZ6" />
 
@@ -33,7 +33,7 @@ var youdao_conv_id = 271546;
 <script type="text/javascript" src="<?=Yii::$app->request->baseUrl?>/frontend/web/style/js/conv.js"></script>
 </head>
 
-<body id="login_bg">
+<body id="login_bg" >
 	<div class="login_wrapper">
 		<div class="login_header">
         	<a href="h/"><img src="<?=Yii::$app->request->baseUrl?>/frontend/web/style/images/logo_white.png" width="285" height="62" alt="拉勾招聘" /></a>
@@ -42,27 +42,30 @@ var youdao_conv_id = 271546;
         </div>
         
     	<input type="hidden" id="resubmitToken" value="9b207beb1e014a93bc852b7ba450db27" />		
-		<div class="login_box">
-        	<form id="loginForm" action="index.php?r=login/yanzhen" method="post">
+		<div class="login_box" id="ok">
+        	<form id="loginForm" action="index.php?r=login/reg_att" method="post">
         		<ul class="register_radio clearfix">
 		            <li>
 		            	找工作
-		              	<input type="radio" value="0" name="type" /> 
+		              	<input type="radio" value="1" name="type"  onclick="mess_b3()" />
 		            </li>
 		            <li>
 		           	           招人
-		              	<input type="radio" value="1" name="type" /> 
+		              	<input type="radio" value="2" name="type" onclick="mess_b3()"/>
 		            </li>
-		        </ul> 
-            	<input type="text" id="email" name="email" tabindex="1" placeholder="请输入常用邮箱地址" />
-                <span class="error" style="display:none;" id="beError"></span>
-                <input type="password" id="password" name="password" tabindex="2" placeholder="请输入密码" />
+		        </ul>
+                <span class="error" style="display:none;" id="beError3"></span>
+            	<input type="text" id="email" name="email" tabindex="1" placeholder="请输入常用邮箱地址"  onblur="mess1()" onfocus="mess_b1()"/>
+                <span class="error" style="display:none;" id="beError1"></span>
+                <input type="password" id="password" name="password" tabindex="2" placeholder="请输入密码" onblur="mess2()"  onfocus="mess_b2()"/>
+                <span class="error" style="display:none;" id="beError2"></span>
             	<label class="fl registerJianJu" for="checkbox">
             		<input type="checkbox" id="checkbox" name="checkbox" checked  class="checkbox valid" />我已阅读并同意<a href="h/privacy.html" target="_blank">《拉勾用户协议》</a>
            		</label>
-                <input type="submit" id="submitLogin" value="注 &nbsp; &nbsp; 册" />
+                <input type="button" id="submitLogin" value="注 &nbsp; &nbsp; 册" onclick="clk()"/>
                 
-                <input type="hidden" id="callback" name="callback" value=""/>
+                <input type="hidden" id="callback" name
+                        ="callback" value=""/>
                 <input type="hidden" id="authType" name="authType" value=""/>
                 <input type="hidden" id="signature" name="signature" value=""/>
                 <input type="hidden" id="timestamp" name="timestamp" value=""/>
@@ -80,93 +83,262 @@ var youdao_conv_id = 271546;
     
     <script type="text/javascript">
     
-    $(document).ready(function(e) {
+//    $(document).ready(function(e) {
     	$('.register_radio li input').click(function(e){
     		$(this).parent('li').addClass('current').append('<em></em>').siblings().removeClass('current').find('em').remove();
     	});
-    	
-    	$('#email').focus(function(){
-    		$('#beError').hide();
-    	});
-    	//验证表单
-	    	 $("#loginForm").validate({
-	    	        rules: {
-	    	        	type:{
-	    	        		required: true
-	    	        	},
-			    	   	email: {
-			    	    	required: true,
-			    	    	email: true
-			    	   	},
-			    	   	password: {
-			    	    	required: true,
-			    	    	rangelength: [6,16]
-			    	   	},
-			    	   	checkbox:{required:true}
-			    	},
-			    	messages: {
-			    		type:{
-	    	        		required:"请选择使用拉勾的目的"
-	    	        	},
-			    	 	email: {
-			    	    	required: "请输入常用邮箱地址",
-			    	    	email: "请输入有效的邮箱地址，如：vivi@lagou.com"
-			    	   	},
-			    	   	password: {
-			    	    	required: "请输入密码",
-			    	    	rangelength: "请输入6-16位密码，字母区分大小写"
-			    	   	},
-			    	   	checkbox: {
-			    	    	required: "请接受拉勾用户协议"
-			    	   	}
-			    	},
-			    	errorPlacement:function(label, element){/* 
-			    		if(element.attr("type") == "radio"){
-			    			label.insertAfter($(element).parents('ul')).css('marginTop','-20px');
-			    		}else if(element.attr("type") == "checkbox"){
-			    			label.inserresult.contenttAfter($(element).parent()).css('clear','left');
-			    		}else{
-			    			label.insertAfter(element);
-			    		} */			    		
-			    		/*modify nancy*/
-			    		if(element.attr("type") == "radio"){
-			    			label.insertAfter($(element).parents('ul')).css('marginTop','-20px');
-			    		}else if(element.attr("type") == "checkbox"){
-			    			label.insertAfter($(element).parent()).css('clear','left');
-			    		}else{
-			    			label.insertAfter(element);
-			    		};	
-			    	},
-			    	submitHandler:function(form){
-			    		var type =$('input[type="radio"]:checked',form).val();
-			    		var email =$('#email').val();
-			    		var password =$('#password').val();
-			    		var resubmitToken = $('#resubmitToken').val();
-			    		
-			    		var callback = $('#callback').val();
-			    		var authType = $('#authType').val();
-			    		var signature = $('#signature').val();
-			    		var timestamp = $('#timestamp').val();
-			    		
-			    		$(form).find(":submit").attr("disabled", true);
+//    	$('#email').keyup(function () {
+//
+//      ///////////////////
+//        })
+//    	$('#email').focus(function(){
+//    		$('#beError').hide();
+//    	});
+//    	//验证表单
+//	    	 $("#loginForm").validate({
+//
+//	    	        rules: {
+//	    	        	type:{
+//	    	        		required: true
+//	    	        	},
+//			    	   	email: {
+//			    	    	required: true,
+//			    	    	email: true
+//			    	   	},
+////			    	   	password: {
+////			    	    	required: true,
+////			    	    	rangelength: [6,18]
+////			    	   	},
+//			    	   	checkbox:{required:true}
+//			    	},
+//			    	messages: {
+//			    		type:{
+//	    	        		required:"请选择使用拉勾的目的"
+//	    	        	},
+//			    	 	email: {
+//			    	    	required: "请输入常用邮箱地址",
+//			    	    	email: "请输入有效的邮箱地址，如：vivi@lagou.com"
+//			    	   	},
+////			    	   	password: {
+////			    	    	required: "请输入密码",
+////			    	    	rangelength: "请输入6-16位密码，字母区分大小写"
+////			    	   	},
+//			    	   	checkbox: {
+//			    	    	required: "请接受拉勾用户协议"
+//			    	   	}
+//			    	},
+//			    	errorPlacement:function(label, element){/*
+//			    		if(element.attr("type") == "radio"){
+//			    			label.insertAfter($(element).parents('ul')).css('marginTop','-20px');
+//			    		}else if(element.attr("type") == "checkbox"){
+//			    			label.inserresult.contenttAfter($(element).parent()).css('clear','left');
+//			    		}else{
+//			    			label.insertAfter(element);
+//			    		} */
+//			    		/*modify nancy*/
+//			    		if(element.attr("type") == "radio"){
+//			    			label.insertAfter($(element).parents('ul')).css('marginTop','-20px');
+//			    		}else if(element.attr("type") == "checkbox"){
+//			    			label.insertAfter($(element).parent()).css('clear','left');
+//			    		}else{
+//			    			label.insertAfter(element);
+//			    		}
+//			    	}
+//	    	});
+//        $(document).ready(function(){
+//            $("#loginForm").submit(function(e){
+//               var email= $('#email').val()
+//
+//               var password = $('#password').val()
+//                var reg =/^\w{6,18}$/
+//                if(!reg.test(password)){
+//                    $("#loginForm").submit(function(e){
+//
+//                    });
+//                    $('#beError').show()
+//                    $('#beError').html('密码格式不正确')var email= $('#email').val()
+//                }
+//            });
+//        });
+//    });
+//        function    blu(){
+//
+//            var   type=  $("input:radio:checked").val();
+//
+//            if(type==""){
+//                $("#loginForm").submit(function(e){
+//                     e.preventDefault();
+//                 });
+//
+//            }
+//            else if(type==1){
+////                    alert(type)
+////                    e.preventDefault();
+//
+//                $.post('index.php?r=login/one',{email:email,type:1,type2:'ajax'}, function (msg) {
+//                    alert(msg)
+//                    e.preventDefault();
+//                })
+//            }
 
-			            $.ajax({
-			            	type:'POST',
-			            	data: {email:email,password:password,type:type,resubmitToken:resubmitToken, callback:callback, authType:authType, signature:signature, timestamp:timestamp},
-			            	url:ctx+'/user/register.json',
-			            	dataType:'json'
-			            }).done(function(result) {
-		            		$('#resubmitToken').val(result.resubmitToken);
-			            	if(result.success){
-			            		window.location.href=result.content;			            		
-			            	}else{
-								$('#beError').text(result.msg).show();
-			            	}
-			            	$(form).find(":submit").attr("disabled", false);			           		
-			            });
-			        }  
-	    	});
-    });
+//        }
+function mess_b1(){
+    $('#beError1').hide()
+}
+function mess_b2(){
+    $('#beError2').hide()
+}
+function mess_b3(){
+    $('#beError3').hide()
+}
+function mess1(){
+    var   type=  $("input:radio:checked").val();
+    var email= $('#email').val()
+    var preg_email =/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+    var mess=0;
+    if(email==""){
+        mess=1;
+    }
+    else if(!preg_email.test(email)){
+        mess=2;
+    }
+    else{
+        if(type==''){
+            $('#beError1').show()
+            $('#beError1').html('请选择注册目的验证邮箱')
+            mess=3;
+        }else {
+            if (type == 1) {
+                $.post('index.php?r=login/one', {email: email, type: 1}, function (msg) {
+                    if (msg == 0) {
+                        $('#beError1').hide()
+                    } else {
+                        $('#beError1').show()
+                        $('#beError1').html('邮箱已注册')
+                    }
+                })
+            } else if (type == 2){
+                $.post('index.php?r=login/one', {email: email, type: 2}, function (msg) {
+                    if (msg == 0) {
+                        $('#beError1').hide()
+                    } else {
+                        $('#beError1').show()
+                        $('#beError1').html('邮箱已注册')
+                    }
+                })
+            }else{
+              $('#beError1').show()
+              $('#beError1').html('请选择类型进行验证')
+          }
+        }
+    }
+    switch (mess){
+        case 1:
+            $('#beError1').show()
+            $('#beError1').html('请输入邮箱')
+            /**/break;
+        case 2:
+            $('#beError1').show()
+            $('#beError1').html('邮箱邮箱格错误式')
+            /**/break;
+    }
+    if(mess==1||mess==2||mess==3){
+        return false
+    }else{
+        return true
+    }
+}
+function mess2(){
+    var password = $('#password').val()
+    var preg_pwd=/^\w{6,18}$/;
+    var mess=0;
+    if(password==""){
+        mess=1;
+    }
+    else if(!preg_pwd.test(password)){
+        mess=2;
+    }
+    switch (mess){
+        case 1:
+            $('#beError2').show()
+            $('#beError2').html('请输入密码')
+            /**/break;
+        case 2:
+            $('#beError4').show()
+            $('#beError4').html('密码格式错误')
+            /**/break;
+    }
+    if(mess==0||mess==1||mess==2){
+        return false
+    }else{
+        return true
+    }
+}
+function mess3(){
+    var   type=  $("input:radio:checked").val();
+    var preg_type = /^[1-2]$/
+    var mess=0
+    if(!preg_type.test(type)){
+        mess=1;
+    }
+    switch (mess){
+        case 1:
+            $('#beError3').show()
+            $('#beError3').html('请选择注册目的')
+            /**/break;
+    }
+    if(mess==0||mess==1){
+        return false
+    }else{
+        return true
+    }
+}
+function clk(){
+    var email= $('#email').val()
+    var password = $('#password').val()
+    var   type=  $("input:radio:checked").val();
+//    var preg_email =/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+//    var preg_pwd=/^\w{6,18}$/;
+//    var preg_type = /^[1-2]$/
+    mess1()
+    mess2()
+    mess3()
+    location.href='index.php?r=login/reg_att&type='+type+'&email='+email+'&password='+password
+    if(mess1()&&mess2()&&mess3()){
+        if(type==''){
+            $('#beError1').show()
+            $('#beError1').html('请选择注册目的验证邮箱')
+            mess=3;
+        }else {
+            if (type == 1) {
+                $.post('index.php?r=login/one', {email: email, type: 1}, function (msg) {
+                    if (msg == 0) {
+                        $('#beError1').hide()
+                        location.href='index.php?r=login/reg_att&type='+type+'&email='+email+'&password='+password
+                    } else {
+                        $('#beError1').show()
+                        $('#beError1').html('邮箱已注册')
+                    }
+                })
+            } else if (type == 2){
+                $.post('index.php?r=login/one', {email: email, type: 2}, function (msg) {
+                    if (msg == 0) {
+                        $('#beError1').hide()
+                        location.href='index.php?r=login/reg_att&type='+type+'&email='+email+'&password='+password
+                    } else {
+                        $('#beError1').show()
+                        $('#beError1').html('邮箱已注册')
+                    }
+                })
+            }else{
+                $('#beError1').show()
+                $('#beError1').html('请选择类型进行验证')
+            }
+        }
+    }else{
+        return  false
+    }
+}
     </script>
 </body>
 </html>
