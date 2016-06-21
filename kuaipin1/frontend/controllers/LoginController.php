@@ -136,4 +136,13 @@ class LoginController extends Controller
             echo $st;//ajax返回
     }
 
+    //退出
+    public function actionLogout(){
+        session_start();
+        //消除session
+        unset($_SESSION['user']);
+        unset($_SESSION['identity']);
+        $this->redirect_message('退出成功','success',3,"index.php?r=index/index");
+    }
+
 }

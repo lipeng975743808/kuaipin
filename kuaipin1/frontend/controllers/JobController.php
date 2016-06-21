@@ -19,6 +19,12 @@ class JobController extends Controller
  *  发布职位
  */
 	public function actionJob_make(){
+        $session = Yii::$app->session;
+        $user=$session->get("user");
+        $identity=$session->get("identity");
+        if (empty($user) || empty($identity)) {
+            $this->redirect_message('请先登陆','error',3,"index.php?r=login/index");die;
+        }
 		return $this->render('index.html');
 	} 
 /**

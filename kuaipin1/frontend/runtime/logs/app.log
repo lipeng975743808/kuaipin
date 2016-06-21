@@ -30461,3 +30461,477 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1466419963.62
     'REQUEST_TIME' => 1466419963
 ]
+2016-06-20 21:25:40 [127.0.0.1][-][eu3cm2pk72oajtjdcqfpmrb884][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to undefined method Yii::app()' in E:\kuaipin\kuaipin\kuaipin1\frontend\controllers\ResumeController.php:26
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-06-20 21:25:39 [127.0.0.1][-][eu3cm2pk72oajtjdcqfpmrb884][info][application] $_GET = [
+    'r' => 'resume/list'
+]
+
+$_COOKIE = [
+    '_pk_ysp_id_' => [
+        'object Object' => '078aaa94110a1770.1466427523.1.1466427523.1466427523.'
+    ]
+    '_pk_ysp_ses_' => [
+        'object Object' => '*'
+    ]
+    'PHPSESSID' => 'eu3cm2pk72oajtjdcqfpmrb884'
+    '_csrf' => '02ad7d3d567a0442eda7620c99ab2b8933dcb981b4268c26ce20f656d9675d6ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"1bbo4iT-L_GecT2mTFlTU5fd3tdUoSfr\";}'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'error' => -1
+    ]
+    'error' => '请先登陆'
+    'code' => 'a9fw'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'www.kuaipin.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:47.0) Gecko/20100101 Firefox/47.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.kuaipin.com/kuaipin/kuaipin1/index.php?r=index/'
+    'HTTP_COOKIE' => '_pk_ysp_id.[object Object].d24d=078aaa94110a1770.1466427523.1.1466427523.1466427523.; _pk_ysp_ses.[object Object].d24d=*; PHPSESSID=eu3cm2pk72oajtjdcqfpmrb884; _csrf=02ad7d3d567a0442eda7620c99ab2b8933dcb981b4268c26ce20f656d9675d6ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%221bbo4iT-L_GecT2mTFlTU5fd3tdUoSfr%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\Program Files (x86)\\AMD APP\\bin\\x86_64;C:\\Program Files (x86)\\AMD APP\\bin\\x86;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Windows7Master;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D;\\phpStudy\\php55;D:\\php专业\\GitTortoise\\bin;D:\\phpStudy\\php55;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'www.kuaipin.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/kuaipin'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/kuaipin'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'E:/kuaipin/kuaipin/kuaipin1/index.php'
+    'REMOTE_PORT' => '60444'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=resume/list'
+    'REQUEST_URI' => '/kuaipin/kuaipin1/index.php?r=resume/list'
+    'SCRIPT_NAME' => '/kuaipin/kuaipin1/index.php'
+    'PHP_SELF' => '/kuaipin/kuaipin1/index.php'
+    'REQUEST_TIME_FLOAT' => 1466429139.651
+    'REQUEST_TIME' => 1466429139
+]
+2016-06-20 21:26:23 [127.0.0.1][-][eu3cm2pk72oajtjdcqfpmrb884][error][yii\base\UnknownMethodException] exception 'yii\base\UnknownMethodException' with message 'Calling unknown method: yii\web\User::setFlash()' in E:\kuaipin\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\Component.php:285
+Stack trace:
+#0 E:\kuaipin\kuaipin\kuaipin1\frontend\controllers\ResumeController.php(26): yii\base\Component->__call('setFlash', Array)
+#1 E:\kuaipin\kuaipin\kuaipin1\frontend\controllers\ResumeController.php(26): yii\web\User->setFlash('errors', '\xE8\xAF\xB7\xE5\x85\x88\xE7\x99\xBB\xE9\x99\x86')
+#2 [internal function]: frontend\controllers\ResumeController->actionList()
+#3 E:\kuaipin\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#4 E:\kuaipin\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#5 E:\kuaipin\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('list', Array)
+#6 E:\kuaipin\kuaipin\kuaipin1\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('resume/list', Array)
+#7 E:\kuaipin\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 E:\kuaipin\kuaipin\kuaipin1\index.php(18): yii\base\Application->run()
+#9 {main}
+2016-06-20 21:26:22 [127.0.0.1][-][eu3cm2pk72oajtjdcqfpmrb884][info][application] $_GET = [
+    'r' => 'resume/list'
+]
+
+$_COOKIE = [
+    '_pk_ysp_id_' => [
+        'object Object' => '078aaa94110a1770.1466427523.1.1466427523.1466427523.'
+    ]
+    '_pk_ysp_ses_' => [
+        'object Object' => '*'
+    ]
+    'PHPSESSID' => 'eu3cm2pk72oajtjdcqfpmrb884'
+    '_csrf' => '02ad7d3d567a0442eda7620c99ab2b8933dcb981b4268c26ce20f656d9675d6ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"1bbo4iT-L_GecT2mTFlTU5fd3tdUoSfr\";}'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'error' => -1
+    ]
+    'error' => '请先登陆'
+    'code' => 'a9fw'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'www.kuaipin.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:47.0) Gecko/20100101 Firefox/47.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.kuaipin.com/kuaipin/kuaipin1/index.php?r=index/'
+    'HTTP_COOKIE' => '_pk_ysp_id.[object Object].d24d=078aaa94110a1770.1466427523.1.1466427523.1466427523.; _pk_ysp_ses.[object Object].d24d=*; PHPSESSID=eu3cm2pk72oajtjdcqfpmrb884; _csrf=02ad7d3d567a0442eda7620c99ab2b8933dcb981b4268c26ce20f656d9675d6ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%221bbo4iT-L_GecT2mTFlTU5fd3tdUoSfr%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\Program Files (x86)\\AMD APP\\bin\\x86_64;C:\\Program Files (x86)\\AMD APP\\bin\\x86;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Windows7Master;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D;\\phpStudy\\php55;D:\\php专业\\GitTortoise\\bin;D:\\phpStudy\\php55;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'www.kuaipin.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/kuaipin'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/kuaipin'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'E:/kuaipin/kuaipin/kuaipin1/index.php'
+    'REMOTE_PORT' => '60454'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=resume/list'
+    'REQUEST_URI' => '/kuaipin/kuaipin1/index.php?r=resume/list'
+    'SCRIPT_NAME' => '/kuaipin/kuaipin1/index.php'
+    'PHP_SELF' => '/kuaipin/kuaipin1/index.php'
+    'REQUEST_TIME_FLOAT' => 1466429182.772
+    'REQUEST_TIME' => 1466429182
+]
+2016-06-20 21:33:35 [127.0.0.1][-][eu3cm2pk72oajtjdcqfpmrb884][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to undefined method Yii::app()' in E:\kuaipin\kuaipin\kuaipin1\frontend\controllers\ResumeController.php:26
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-06-20 21:33:35 [127.0.0.1][-][eu3cm2pk72oajtjdcqfpmrb884][info][application] $_GET = [
+    'r' => 'resume/list'
+]
+
+$_COOKIE = [
+    '_pk_ysp_id_' => [
+        'object Object' => '078aaa94110a1770.1466427523.1.1466427523.1466427523.'
+    ]
+    'PHPSESSID' => 'eu3cm2pk72oajtjdcqfpmrb884'
+    '_csrf' => '02ad7d3d567a0442eda7620c99ab2b8933dcb981b4268c26ce20f656d9675d6ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"1bbo4iT-L_GecT2mTFlTU5fd3tdUoSfr\";}'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'error' => -1
+    ]
+    'error' => '请先登陆'
+    'code' => 'a9fw'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'www.kuaipin.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:47.0) Gecko/20100101 Firefox/47.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.kuaipin.com/kuaipin/kuaipin1/index.php?r=index/'
+    'HTTP_COOKIE' => '_pk_ysp_id.[object Object].d24d=078aaa94110a1770.1466427523.1.1466427523.1466427523.; PHPSESSID=eu3cm2pk72oajtjdcqfpmrb884; _csrf=02ad7d3d567a0442eda7620c99ab2b8933dcb981b4268c26ce20f656d9675d6ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%221bbo4iT-L_GecT2mTFlTU5fd3tdUoSfr%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\Program Files (x86)\\AMD APP\\bin\\x86_64;C:\\Program Files (x86)\\AMD APP\\bin\\x86;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Windows7Master;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D;\\phpStudy\\php55;D:\\php专业\\GitTortoise\\bin;D:\\phpStudy\\php55;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'www.kuaipin.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/kuaipin'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/kuaipin'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'E:/kuaipin/kuaipin/kuaipin1/index.php'
+    'REMOTE_PORT' => '60501'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=resume/list'
+    'REQUEST_URI' => '/kuaipin/kuaipin1/index.php?r=resume/list'
+    'SCRIPT_NAME' => '/kuaipin/kuaipin1/index.php'
+    'PHP_SELF' => '/kuaipin/kuaipin1/index.php'
+    'REQUEST_TIME_FLOAT' => 1466429615.191
+    'REQUEST_TIME' => 1466429615
+]
+2016-06-20 21:35:36 [127.0.0.1][-][eu3cm2pk72oajtjdcqfpmrb884][error][yii\base\UnknownMethodException] exception 'yii\base\UnknownMethodException' with message 'Calling unknown method: yii\web\User::putErrorMsg()' in E:\kuaipin\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\Component.php:285
+Stack trace:
+#0 E:\kuaipin\kuaipin\kuaipin1\frontend\controllers\ResumeController.php(26): yii\base\Component->__call('putErrorMsg', Array)
+#1 E:\kuaipin\kuaipin\kuaipin1\frontend\controllers\ResumeController.php(26): yii\web\User->putErrorMsg('\xE8\xAF\xB7\xE5\x85\x88\xE7\x99\xBB\xE9\x99\x86\xEF\xBC\x81...')
+#2 [internal function]: frontend\controllers\ResumeController->actionList()
+#3 E:\kuaipin\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#4 E:\kuaipin\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#5 E:\kuaipin\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('list', Array)
+#6 E:\kuaipin\kuaipin\kuaipin1\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('resume/list', Array)
+#7 E:\kuaipin\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 E:\kuaipin\kuaipin\kuaipin1\index.php(18): yii\base\Application->run()
+#9 {main}
+2016-06-20 21:35:36 [127.0.0.1][-][eu3cm2pk72oajtjdcqfpmrb884][info][application] $_GET = [
+    'r' => 'resume/list'
+]
+
+$_COOKIE = [
+    '_pk_ysp_id_' => [
+        'object Object' => '078aaa94110a1770.1466427523.1.1466427523.1466427523.'
+    ]
+    'PHPSESSID' => 'eu3cm2pk72oajtjdcqfpmrb884'
+    '_csrf' => '02ad7d3d567a0442eda7620c99ab2b8933dcb981b4268c26ce20f656d9675d6ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"1bbo4iT-L_GecT2mTFlTU5fd3tdUoSfr\";}'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'error' => -1
+    ]
+    'error' => '请先登陆'
+    'code' => 'a9fw'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'www.kuaipin.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:47.0) Gecko/20100101 Firefox/47.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.kuaipin.com/kuaipin/kuaipin1/index.php?r=index/'
+    'HTTP_COOKIE' => '_pk_ysp_id.[object Object].d24d=078aaa94110a1770.1466427523.1.1466427523.1466427523.; PHPSESSID=eu3cm2pk72oajtjdcqfpmrb884; _csrf=02ad7d3d567a0442eda7620c99ab2b8933dcb981b4268c26ce20f656d9675d6ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%221bbo4iT-L_GecT2mTFlTU5fd3tdUoSfr%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\Program Files (x86)\\AMD APP\\bin\\x86_64;C:\\Program Files (x86)\\AMD APP\\bin\\x86;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Windows7Master;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D;\\phpStudy\\php55;D:\\php专业\\GitTortoise\\bin;D:\\phpStudy\\php55;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'www.kuaipin.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/kuaipin'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/kuaipin'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'E:/kuaipin/kuaipin/kuaipin1/index.php'
+    'REMOTE_PORT' => '60515'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=resume/list'
+    'REQUEST_URI' => '/kuaipin/kuaipin1/index.php?r=resume/list'
+    'SCRIPT_NAME' => '/kuaipin/kuaipin1/index.php'
+    'PHP_SELF' => '/kuaipin/kuaipin1/index.php'
+    'REQUEST_TIME_FLOAT' => 1466429736.075
+    'REQUEST_TIME' => 1466429736
+]
+2016-06-20 21:36:59 [127.0.0.1][-][eu3cm2pk72oajtjdcqfpmrb884][error][yii\base\UnknownMethodException] exception 'yii\base\UnknownMethodException' with message 'Calling unknown method: yii\web\User::putErrorMsg()' in E:\kuaipin\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\Component.php:285
+Stack trace:
+#0 E:\kuaipin\kuaipin\kuaipin1\frontend\controllers\ResumeController.php(28): yii\base\Component->__call('putErrorMsg', Array)
+#1 E:\kuaipin\kuaipin\kuaipin1\frontend\controllers\ResumeController.php(28): yii\web\User->putErrorMsg('\xE8\xAF\xB7\xE5\x85\x88\xE7\x99\xBB\xE9\x99\x86\xEF\xBC\x81...')
+#2 [internal function]: frontend\controllers\ResumeController->actionList()
+#3 E:\kuaipin\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#4 E:\kuaipin\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#5 E:\kuaipin\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('list', Array)
+#6 E:\kuaipin\kuaipin\kuaipin1\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('resume/list', Array)
+#7 E:\kuaipin\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 E:\kuaipin\kuaipin\kuaipin1\index.php(18): yii\base\Application->run()
+#9 {main}
+2016-06-20 21:36:59 [127.0.0.1][-][eu3cm2pk72oajtjdcqfpmrb884][info][application] $_GET = [
+    'r' => 'resume/list'
+]
+
+$_COOKIE = [
+    '_pk_ysp_id_' => [
+        'object Object' => '078aaa94110a1770.1466427523.1.1466427523.1466427523.'
+    ]
+    'PHPSESSID' => 'eu3cm2pk72oajtjdcqfpmrb884'
+    '_csrf' => '02ad7d3d567a0442eda7620c99ab2b8933dcb981b4268c26ce20f656d9675d6ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"1bbo4iT-L_GecT2mTFlTU5fd3tdUoSfr\";}'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'error' => -1
+    ]
+    'error' => '请先登陆'
+    'code' => 'a9fw'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'www.kuaipin.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:47.0) Gecko/20100101 Firefox/47.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.kuaipin.com/kuaipin/kuaipin1/index.php?r=index/'
+    'HTTP_COOKIE' => '_pk_ysp_id.[object Object].d24d=078aaa94110a1770.1466427523.1.1466427523.1466427523.; PHPSESSID=eu3cm2pk72oajtjdcqfpmrb884; _csrf=02ad7d3d567a0442eda7620c99ab2b8933dcb981b4268c26ce20f656d9675d6ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%221bbo4iT-L_GecT2mTFlTU5fd3tdUoSfr%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\Program Files (x86)\\AMD APP\\bin\\x86_64;C:\\Program Files (x86)\\AMD APP\\bin\\x86;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Windows7Master;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D;\\phpStudy\\php55;D:\\php专业\\GitTortoise\\bin;D:\\phpStudy\\php55;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'www.kuaipin.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/kuaipin'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/kuaipin'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'E:/kuaipin/kuaipin/kuaipin1/index.php'
+    'REMOTE_PORT' => '60527'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=resume/list'
+    'REQUEST_URI' => '/kuaipin/kuaipin1/index.php?r=resume/list'
+    'SCRIPT_NAME' => '/kuaipin/kuaipin1/index.php'
+    'PHP_SELF' => '/kuaipin/kuaipin1/index.php'
+    'REQUEST_TIME_FLOAT' => 1466429819.587
+    'REQUEST_TIME' => 1466429819
+]
+2016-06-20 21:45:20 [127.0.0.1][-][eu3cm2pk72oajtjdcqfpmrb884][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Array to string conversion' in E:\kuaipin\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\Controller.php:546
+Stack trace:
+#0 E:\kuaipin\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\Controller.php(546): yii\base\ErrorHandler->handleError(8, 'Array to string...', 'E:\\kuaipin\\kuai...', 546, Array)
+#1 E:\kuaipin\kuaipin\kuaipin1\frontend\controllers\ResumeController.php(28): yii\base\Controller->redirect_message('\xE8\xAF\xB7\xE5\x85\x88\xE7\x99\xBB\xE9\x99\x86', 'error', Array)
+#2 [internal function]: frontend\controllers\ResumeController->actionList()
+#3 E:\kuaipin\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#4 E:\kuaipin\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#5 E:\kuaipin\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('list', Array)
+#6 E:\kuaipin\kuaipin\kuaipin1\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('resume/list', Array)
+#7 E:\kuaipin\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 E:\kuaipin\kuaipin\kuaipin1\index.php(18): yii\base\Application->run()
+#9 {main}
+2016-06-20 21:45:20 [127.0.0.1][-][eu3cm2pk72oajtjdcqfpmrb884][info][application] $_GET = [
+    'r' => 'resume/list'
+]
+
+$_COOKIE = [
+    '_pk_ysp_id_' => [
+        'object Object' => '078aaa94110a1770.1466427523.1.1466427523.1466427523.'
+    ]
+    'PHPSESSID' => 'eu3cm2pk72oajtjdcqfpmrb884'
+    '_csrf' => '02ad7d3d567a0442eda7620c99ab2b8933dcb981b4268c26ce20f656d9675d6ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"1bbo4iT-L_GecT2mTFlTU5fd3tdUoSfr\";}'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'error' => -1
+    ]
+    'error' => '请先登陆'
+    'code' => 'a9fw'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'www.kuaipin.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:47.0) Gecko/20100101 Firefox/47.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.kuaipin.com/kuaipin/kuaipin1/index.php?r=index/'
+    'HTTP_COOKIE' => '_pk_ysp_id.[object Object].d24d=078aaa94110a1770.1466427523.1.1466427523.1466427523.; PHPSESSID=eu3cm2pk72oajtjdcqfpmrb884; _csrf=02ad7d3d567a0442eda7620c99ab2b8933dcb981b4268c26ce20f656d9675d6ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%221bbo4iT-L_GecT2mTFlTU5fd3tdUoSfr%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\Program Files (x86)\\AMD APP\\bin\\x86_64;C:\\Program Files (x86)\\AMD APP\\bin\\x86;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Windows7Master;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D;\\phpStudy\\php55;D:\\php专业\\GitTortoise\\bin;D:\\phpStudy\\php55;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'www.kuaipin.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/kuaipin'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/kuaipin'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'E:/kuaipin/kuaipin/kuaipin1/index.php'
+    'REMOTE_PORT' => '60539'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=resume/list'
+    'REQUEST_URI' => '/kuaipin/kuaipin1/index.php?r=resume/list'
+    'SCRIPT_NAME' => '/kuaipin/kuaipin1/index.php'
+    'PHP_SELF' => '/kuaipin/kuaipin1/index.php'
+    'REQUEST_TIME_FLOAT' => 1466430320.794
+    'REQUEST_TIME' => 1466430320
+]
+2016-06-20 21:46:04 [127.0.0.1][-][eu3cm2pk72oajtjdcqfpmrb884][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'The view file does not exist: E:\kuaipin\kuaipin\kuaipin1\frontend\views\resume\[index.html' in E:\kuaipin\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\View.php:226
+Stack trace:
+#0 E:\kuaipin\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('E:\\kuaipin\\kuai...', Array, Object(frontend\controllers\ResumeController))
+#1 E:\kuaipin\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('[index.html', Array, Object(frontend\controllers\ResumeController))
+#2 E:\kuaipin\kuaipin\kuaipin1\frontend\controllers\ResumeController.php(30): yii\base\Controller->render('[index.html')
+#3 [internal function]: frontend\controllers\ResumeController->actionList()
+#4 E:\kuaipin\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 E:\kuaipin\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 E:\kuaipin\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('list', Array)
+#7 E:\kuaipin\kuaipin\kuaipin1\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('resume/list', Array)
+#8 E:\kuaipin\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 E:\kuaipin\kuaipin\kuaipin1\index.php(18): yii\base\Application->run()
+#10 {main}
+2016-06-20 21:46:04 [127.0.0.1][-][eu3cm2pk72oajtjdcqfpmrb884][info][application] $_GET = [
+    'r' => 'resume/list'
+]
+
+$_COOKIE = [
+    '_pk_ysp_id_' => [
+        'object Object' => '078aaa94110a1770.1466427523.1.1466427523.1466427523.'
+    ]
+    'PHPSESSID' => 'eu3cm2pk72oajtjdcqfpmrb884'
+    '_csrf' => '02ad7d3d567a0442eda7620c99ab2b8933dcb981b4268c26ce20f656d9675d6ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"1bbo4iT-L_GecT2mTFlTU5fd3tdUoSfr\";}'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'error' => -1
+    ]
+    'error' => '请先登陆'
+    'code' => 'a9fw'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'www.kuaipin.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:47.0) Gecko/20100101 Firefox/47.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.kuaipin.com/kuaipin/kuaipin1/index.php?r=index/'
+    'HTTP_COOKIE' => '_pk_ysp_id.[object Object].d24d=078aaa94110a1770.1466427523.1.1466427523.1466427523.; PHPSESSID=eu3cm2pk72oajtjdcqfpmrb884; _csrf=02ad7d3d567a0442eda7620c99ab2b8933dcb981b4268c26ce20f656d9675d6ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%221bbo4iT-L_GecT2mTFlTU5fd3tdUoSfr%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\Program Files (x86)\\AMD APP\\bin\\x86_64;C:\\Program Files (x86)\\AMD APP\\bin\\x86;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Windows7Master;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D;\\phpStudy\\php55;D:\\php专业\\GitTortoise\\bin;D:\\phpStudy\\php55;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'www.kuaipin.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/kuaipin'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/kuaipin'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'E:/kuaipin/kuaipin/kuaipin1/index.php'
+    'REMOTE_PORT' => '60546'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=resume/list'
+    'REQUEST_URI' => '/kuaipin/kuaipin1/index.php?r=resume/list'
+    'SCRIPT_NAME' => '/kuaipin/kuaipin1/index.php'
+    'PHP_SELF' => '/kuaipin/kuaipin1/index.php'
+    'REQUEST_TIME_FLOAT' => 1466430364.506
+    'REQUEST_TIME' => 1466430364
+]
