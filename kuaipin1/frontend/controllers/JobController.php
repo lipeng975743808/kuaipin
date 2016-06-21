@@ -19,7 +19,7 @@ class JobController extends Controller
  *  发布职位
  */
 	public function actionJob_make(){
- 		$session = Yii::$app->session;
+		$session = Yii::$app->session;
         $user=$session->get("user");
         $identity=$session->get("identity");
         if (empty($user) || empty($identity)) {
@@ -31,6 +31,7 @@ class JobController extends Controller
         //print_r($ar);
 	    return $this->render('index.html',['a'=>$ar]);
     }
+
  public function actionCate(&$info, $child, $pid)  
 {  
     $child = array();  
@@ -73,7 +74,6 @@ public function actionAdd()
         echo "<script>alert('添加失败')</script>";
     }
 }
-   
 /**
 *  有效职位
 */
@@ -138,10 +138,8 @@ public function actionAdd()
 *  已下线职位
 */
 	public function actionNopositions(){
-		return $this->render('positions.html');
-	} 
-
-
+		return $this->render('positions.html');	
+    }
 
     function actionHead()
     {
@@ -168,4 +166,5 @@ public function actionAdd()
         }
         return $arr;
     }
+
 }
