@@ -17,7 +17,6 @@ class LoginController extends Controller
 
 
 	public function actionIndex(){
-
 /**
  * 判断session_id 是否存在 if(存在){跳到主页面}else{跳到登录页面}
  */
@@ -134,6 +133,15 @@ class LoginController extends Controller
             }
         }
             echo $st;//ajax返回
+    }
+
+    //退出
+    public function actionLogout(){
+        //消除session
+        session_start();
+        unset($_SESSION['user']);
+        unset($_SESSION['identity']);
+        $this->redirect_message('退出成功','success',3,"index.php?r=index/index");
     }
 
 }

@@ -1,6 +1,6 @@
 <?php
 namespace frontend\controllers;
-
+header('content-type:text/html;charset=utf8');
 use app\models\KpUser;
 use app\models\KpCompanyRegister;
 use Yii;
@@ -20,9 +20,17 @@ class IndexController extends Controller
      */
     public function actionIndex()
     {
-        return $this->render('index.html');
-    }
+        $list = $this->actionGetTree();
 
+        return $this->render('index.html',['arr'=>$list]);
+    }
+    function actionGetTree($pid=0){
+        $arr = Yii::$app->db->createCommand("select * from kp_work where pid='$pid'")->queryAll();
+        foreach ($arr as $key => $value) {
+            $arr[$key]['son'] = $this->actionGetTree($value['w_id']);
+        }
+        return $arr;
+    }
     function actionHead()
     {
         $session = Yii::$app->session;

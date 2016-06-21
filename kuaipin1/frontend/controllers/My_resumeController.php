@@ -1,6 +1,5 @@
 <?php
 namespace frontend\controllers;
-
 use Yii;
 use yii\web\Controller;
 use app\models\KpUser;
@@ -19,6 +18,12 @@ class My_resumeController extends Controller
  * 制作简历
  */
 	public function actionMake(){
+        $session = Yii::$app->session;
+        $user=$session->get("user");
+        $identity=$session->get("identity");
+        if (empty($user) || empty($identity)) {
+            $this->redirect_message('请先登陆','error',3,"index.php?r=login/index");die;
+        }
 		return $this->render('index.html');
 	} 
 /**
