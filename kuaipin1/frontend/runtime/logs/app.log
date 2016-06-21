@@ -30461,3 +30461,431 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1466419963.62
     'REQUEST_TIME' => 1466419963
 ]
+2016-06-20 20:23:48 [127.0.0.1][-][94d83r6r1nih9mjtpng2ld2772][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "create/index".' in F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\Module.php:460
+Stack trace:
+#0 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('create/index', Array)
+#1 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 F:\shop\kuaipin\kuaipin1\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 F:\shop\kuaipin\kuaipin1\index.php(18): yii\base\Application->run()
+#2 {main}
+2016-06-20 20:23:48 [127.0.0.1][-][94d83r6r1nih9mjtpng2ld2772][info][application] $_GET = [
+    'r' => 'create/index'
+]
+
+$_COOKIE = [
+    'ECS' => [
+        'visit_times' => '25'
+        'username' => '雷宇'
+        'user_id' => '12'
+        'password' => '389c6120cc59c4d251e59111d364fa5f'
+    ]
+    'Hm_lvt_5f036dd99455cb8adc9de73e2f052f72' => '1464224395,1464246347,1464763170'
+    'PHPSESSID' => '94d83r6r1nih9mjtpng2ld2772'
+    '_csrf' => '9aab8442e7531503b88bb5785443bde4461d7d48e63c1362656bf40273c66d61a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qtzu5TMRArmYgMpFtfsT4QA20hZdY8lX\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'code' => 'Hf2e'
+    'user' => '5'
+    'identity' => 'company'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'www.shop.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:47.0) Gecko/20100101 Firefox/47.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.shop.com/kuaipin/kuaipin1/index.php?r=resume/add_people'
+    'HTTP_COOKIE' => 'ECS[visit_times]=25; ECS[username]=%E9%9B%B7%E5%AE%87; Hm_lvt_5f036dd99455cb8adc9de73e2f052f72=1464224395,1464246347,1464763170; ECS[user_id]=12; ECS[password]=389c6120cc59c4d251e59111d364fa5f; PHPSESSID=94d83r6r1nih9mjtpng2ld2772; _csrf=9aab8442e7531503b88bb5785443bde4461d7d48e63c1362656bf40273c66d61a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qtzu5TMRArmYgMpFtfsT4QA20hZdY8lX%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;E:\\web\\Mysql\\bin;E:\\server\\mysql\\bin;C:\\Program Files\\TortoiseSVN\\bin;D:\\Program Files\\VisualSVN Server\\bin;D:\\server\\Mysqls\\bin;C:\\Program Files (x86)\\MySQL\\MySQL Server 5.5\\bin;D:\\phpStudy\\php55;E:\\git\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'www.shop.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/shop'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/shop'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'F:/shop/kuaipin/kuaipin1/index.php'
+    'REMOTE_PORT' => '5819'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=create/index'
+    'REQUEST_URI' => '/kuaipin/kuaipin1/index.php?r=create/index'
+    'SCRIPT_NAME' => '/kuaipin/kuaipin1/index.php'
+    'PHP_SELF' => '/kuaipin/kuaipin1/index.php'
+    'REQUEST_TIME_FLOAT' => 1466425428.06
+    'REQUEST_TIME' => 1466425428
+]
+2016-06-21 08:12:02 [127.0.0.1][-][-][error][yii\base\UnknownMethodException] exception 'yii\base\UnknownMethodException' with message 'Calling unknown method: frontend\controllers\IndexController::actionGetTree()' in F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\Component.php:285
+Stack trace:
+#0 F:\shop\kuaipin\kuaipin1\frontend\controllers\IndexController.php(23): yii\base\Component->__call('actionGetTree', Array)
+#1 F:\shop\kuaipin\kuaipin1\frontend\controllers\IndexController.php(23): frontend\controllers\IndexController->actionGetTree()
+#2 [internal function]: frontend\controllers\IndexController->actionIndex()
+#3 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#4 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#5 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('index', Array)
+#6 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('index/index', Array)
+#7 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 F:\shop\kuaipin\kuaipin1\index.php(18): yii\base\Application->run()
+#9 {main}
+2016-06-21 08:12:02 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'index/index'
+]
+
+$_COOKIE = [
+    'ECS' => [
+        'visit_times' => '25'
+        'username' => '雷宇'
+        'user_id' => '12'
+        'password' => '389c6120cc59c4d251e59111d364fa5f'
+    ]
+    'Hm_lvt_5f036dd99455cb8adc9de73e2f052f72' => '1464224395,1464246347,1464763170'
+    'PHPSESSID' => '3jkulp4scic4sf61cja3kk1i24'
+    '_csrf' => '05993bfb9706a61c025655498dcbbc771a3556e279d51a433ac20bff0ac7e1cba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"S8SZG2keV7GqdgW84heQQXptyClK3hCm\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'www.shop.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:47.0) Gecko/20100101 Firefox/47.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'ECS[visit_times]=25; ECS[username]=%E9%9B%B7%E5%AE%87; Hm_lvt_5f036dd99455cb8adc9de73e2f052f72=1464224395,1464246347,1464763170; ECS[user_id]=12; ECS[password]=389c6120cc59c4d251e59111d364fa5f; PHPSESSID=3jkulp4scic4sf61cja3kk1i24; _csrf=05993bfb9706a61c025655498dcbbc771a3556e279d51a433ac20bff0ac7e1cba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22S8SZG2keV7GqdgW84heQQXptyClK3hCm%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;E:\\web\\Mysql\\bin;E:\\server\\mysql\\bin;C:\\Program Files\\TortoiseSVN\\bin;D:\\Program Files\\VisualSVN Server\\bin;D:\\server\\Mysqls\\bin;C:\\Program Files (x86)\\MySQL\\MySQL Server 5.5\\bin;D:\\phpStudy\\php55;E:\\git\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'www.shop.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/shop'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/shop'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'F:/shop/kuaipin/kuaipin1/index.php'
+    'REMOTE_PORT' => '11145'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index/index'
+    'REQUEST_URI' => '/kuaipin/kuaipin1/index.php?r=index/index'
+    'SCRIPT_NAME' => '/kuaipin/kuaipin1/index.php'
+    'PHP_SELF' => '/kuaipin/kuaipin1/index.php'
+    'REQUEST_TIME_FLOAT' => 1466467922.227
+    'REQUEST_TIME' => 1466467922
+]
+2016-06-21 08:12:27 [127.0.0.1][-][-][error][yii\base\UnknownMethodException] exception 'yii\base\UnknownMethodException' with message 'Calling unknown method: frontend\controllers\IndexController::getTree()' in F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\Component.php:285
+Stack trace:
+#0 F:\shop\kuaipin\kuaipin1\frontend\controllers\IndexController.php(23): yii\base\Component->__call('getTree', Array)
+#1 F:\shop\kuaipin\kuaipin1\frontend\controllers\IndexController.php(23): frontend\controllers\IndexController->getTree()
+#2 [internal function]: frontend\controllers\IndexController->actionIndex()
+#3 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#4 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#5 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('index', Array)
+#6 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('index/index', Array)
+#7 F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 F:\shop\kuaipin\kuaipin1\index.php(18): yii\base\Application->run()
+#9 {main}
+2016-06-21 08:12:27 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'index/index'
+]
+
+$_COOKIE = [
+    'ECS' => [
+        'visit_times' => '25'
+        'username' => '雷宇'
+        'user_id' => '12'
+        'password' => '389c6120cc59c4d251e59111d364fa5f'
+    ]
+    'Hm_lvt_5f036dd99455cb8adc9de73e2f052f72' => '1464224395,1464246347,1464763170'
+    'PHPSESSID' => '3jkulp4scic4sf61cja3kk1i24'
+    '_csrf' => '05993bfb9706a61c025655498dcbbc771a3556e279d51a433ac20bff0ac7e1cba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"S8SZG2keV7GqdgW84heQQXptyClK3hCm\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'www.shop.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:47.0) Gecko/20100101 Firefox/47.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'ECS[visit_times]=25; ECS[username]=%E9%9B%B7%E5%AE%87; Hm_lvt_5f036dd99455cb8adc9de73e2f052f72=1464224395,1464246347,1464763170; ECS[user_id]=12; ECS[password]=389c6120cc59c4d251e59111d364fa5f; PHPSESSID=3jkulp4scic4sf61cja3kk1i24; _csrf=05993bfb9706a61c025655498dcbbc771a3556e279d51a433ac20bff0ac7e1cba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22S8SZG2keV7GqdgW84heQQXptyClK3hCm%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;E:\\web\\Mysql\\bin;E:\\server\\mysql\\bin;C:\\Program Files\\TortoiseSVN\\bin;D:\\Program Files\\VisualSVN Server\\bin;D:\\server\\Mysqls\\bin;C:\\Program Files (x86)\\MySQL\\MySQL Server 5.5\\bin;D:\\phpStudy\\php55;E:\\git\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'www.shop.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/shop'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/shop'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'F:/shop/kuaipin/kuaipin1/index.php'
+    'REMOTE_PORT' => '11160'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index/index'
+    'REQUEST_URI' => '/kuaipin/kuaipin1/index.php?r=index/index'
+    'SCRIPT_NAME' => '/kuaipin/kuaipin1/index.php'
+    'PHP_SELF' => '/kuaipin/kuaipin1/index.php'
+    'REQUEST_TIME_FLOAT' => 1466467947.05
+    'REQUEST_TIME' => 1466467947
+]
+2016-06-21 08:18:21 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Maximum execution time of 30 seconds exceeded' in F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\log\Logger.php:144
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-06-21 08:17:51 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'index/index'
+]
+
+$_COOKIE = [
+    'ECS' => [
+        'visit_times' => '25'
+        'username' => '雷宇'
+        'user_id' => '12'
+        'password' => '389c6120cc59c4d251e59111d364fa5f'
+    ]
+    'Hm_lvt_5f036dd99455cb8adc9de73e2f052f72' => '1464224395,1464246347,1464763170'
+    'PHPSESSID' => '3jkulp4scic4sf61cja3kk1i24'
+    '_csrf' => '05993bfb9706a61c025655498dcbbc771a3556e279d51a433ac20bff0ac7e1cba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"S8SZG2keV7GqdgW84heQQXptyClK3hCm\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'www.shop.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:47.0) Gecko/20100101 Firefox/47.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'ECS[visit_times]=25; ECS[username]=%E9%9B%B7%E5%AE%87; Hm_lvt_5f036dd99455cb8adc9de73e2f052f72=1464224395,1464246347,1464763170; ECS[user_id]=12; ECS[password]=389c6120cc59c4d251e59111d364fa5f; PHPSESSID=3jkulp4scic4sf61cja3kk1i24; _csrf=05993bfb9706a61c025655498dcbbc771a3556e279d51a433ac20bff0ac7e1cba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22S8SZG2keV7GqdgW84heQQXptyClK3hCm%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;E:\\web\\Mysql\\bin;E:\\server\\mysql\\bin;C:\\Program Files\\TortoiseSVN\\bin;D:\\Program Files\\VisualSVN Server\\bin;D:\\server\\Mysqls\\bin;C:\\Program Files (x86)\\MySQL\\MySQL Server 5.5\\bin;D:\\phpStudy\\php55;E:\\git\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'www.shop.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/shop'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/shop'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'F:/shop/kuaipin/kuaipin1/index.php'
+    'REMOTE_PORT' => '11257'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index/index'
+    'REQUEST_URI' => '/kuaipin/kuaipin1/index.php?r=index/index'
+    'SCRIPT_NAME' => '/kuaipin/kuaipin1/index.php'
+    'PHP_SELF' => '/kuaipin/kuaipin1/index.php'
+    'REQUEST_TIME_FLOAT' => 1466468271.315
+    'REQUEST_TIME' => 1466468271
+]
+2016-06-21 08:19:07 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Maximum execution time of 30 seconds exceeded' in F:\shop\kuaipin\kuaipin1\vendor\yiisoft\yii2\BaseYii.php:459
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-06-21 08:18:37 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'index'
+]
+
+$_COOKIE = [
+    'ECS' => [
+        'visit_times' => '25'
+        'username' => '雷宇'
+        'user_id' => '12'
+        'password' => '389c6120cc59c4d251e59111d364fa5f'
+    ]
+    'Hm_lvt_5f036dd99455cb8adc9de73e2f052f72' => '1464224395,1464246347,1464763170'
+    'PHPSESSID' => '3jkulp4scic4sf61cja3kk1i24'
+    '_csrf' => '05993bfb9706a61c025655498dcbbc771a3556e279d51a433ac20bff0ac7e1cba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"S8SZG2keV7GqdgW84heQQXptyClK3hCm\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'www.shop.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:47.0) Gecko/20100101 Firefox/47.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'ECS[visit_times]=25; ECS[username]=%E9%9B%B7%E5%AE%87; Hm_lvt_5f036dd99455cb8adc9de73e2f052f72=1464224395,1464246347,1464763170; ECS[user_id]=12; ECS[password]=389c6120cc59c4d251e59111d364fa5f; PHPSESSID=3jkulp4scic4sf61cja3kk1i24; _csrf=05993bfb9706a61c025655498dcbbc771a3556e279d51a433ac20bff0ac7e1cba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22S8SZG2keV7GqdgW84heQQXptyClK3hCm%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;E:\\web\\Mysql\\bin;E:\\server\\mysql\\bin;C:\\Program Files\\TortoiseSVN\\bin;D:\\Program Files\\VisualSVN Server\\bin;D:\\server\\Mysqls\\bin;C:\\Program Files (x86)\\MySQL\\MySQL Server 5.5\\bin;D:\\phpStudy\\php55;E:\\git\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'www.shop.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/shop'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/shop'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'F:/shop/kuaipin/kuaipin1/index.php'
+    'REMOTE_PORT' => '11278'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index'
+    'REQUEST_URI' => '/kuaipin/kuaipin1/index.php?r=index'
+    'SCRIPT_NAME' => '/kuaipin/kuaipin1/index.php'
+    'PHP_SELF' => '/kuaipin/kuaipin1/index.php'
+    'REQUEST_TIME_FLOAT' => 1466468317.792
+    'REQUEST_TIME' => 1466468317
+]
+2016-06-21 09:02:09 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '}'' in F:\shop\kuaipin\kuaipin1\frontend\views\Index\index.html:64
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-06-21 09:02:09 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'index'
+]
+
+$_COOKIE = [
+    'ECS' => [
+        'visit_times' => '25'
+        'username' => '雷宇'
+        'user_id' => '12'
+        'password' => '389c6120cc59c4d251e59111d364fa5f'
+    ]
+    'Hm_lvt_5f036dd99455cb8adc9de73e2f052f72' => '1464224395,1464246347,1464763170'
+    'PHPSESSID' => '3jkulp4scic4sf61cja3kk1i24'
+    '_csrf' => '05993bfb9706a61c025655498dcbbc771a3556e279d51a433ac20bff0ac7e1cba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"S8SZG2keV7GqdgW84heQQXptyClK3hCm\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'www.shop.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:47.0) Gecko/20100101 Firefox/47.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'ECS[visit_times]=25; ECS[username]=%E9%9B%B7%E5%AE%87; Hm_lvt_5f036dd99455cb8adc9de73e2f052f72=1464224395,1464246347,1464763170; ECS[user_id]=12; ECS[password]=389c6120cc59c4d251e59111d364fa5f; PHPSESSID=3jkulp4scic4sf61cja3kk1i24; _csrf=05993bfb9706a61c025655498dcbbc771a3556e279d51a433ac20bff0ac7e1cba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22S8SZG2keV7GqdgW84heQQXptyClK3hCm%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;E:\\web\\Mysql\\bin;E:\\server\\mysql\\bin;C:\\Program Files\\TortoiseSVN\\bin;D:\\Program Files\\VisualSVN Server\\bin;D:\\server\\Mysqls\\bin;C:\\Program Files (x86)\\MySQL\\MySQL Server 5.5\\bin;D:\\phpStudy\\php55;E:\\git\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'www.shop.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/shop'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/shop'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'F:/shop/kuaipin/kuaipin1/index.php'
+    'REMOTE_PORT' => '13852'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index'
+    'REQUEST_URI' => '/kuaipin/kuaipin1/?r=index'
+    'SCRIPT_NAME' => '/kuaipin/kuaipin1/index.php'
+    'PHP_SELF' => '/kuaipin/kuaipin1/index.php'
+    'REQUEST_TIME_FLOAT' => 1466470929.489
+    'REQUEST_TIME' => 1466470929
+]
+2016-06-21 09:04:43 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '}'' in F:\shop\kuaipin\kuaipin1\frontend\views\Index\index.html:62
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-06-21 09:04:42 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'index'
+]
+
+$_COOKIE = [
+    'ECS' => [
+        'visit_times' => '25'
+        'username' => '雷宇'
+        'user_id' => '12'
+        'password' => '389c6120cc59c4d251e59111d364fa5f'
+    ]
+    'Hm_lvt_5f036dd99455cb8adc9de73e2f052f72' => '1464224395,1464246347,1464763170'
+    'PHPSESSID' => '3jkulp4scic4sf61cja3kk1i24'
+    '_csrf' => '05993bfb9706a61c025655498dcbbc771a3556e279d51a433ac20bff0ac7e1cba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"S8SZG2keV7GqdgW84heQQXptyClK3hCm\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'www.shop.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:47.0) Gecko/20100101 Firefox/47.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'ECS[visit_times]=25; ECS[username]=%E9%9B%B7%E5%AE%87; Hm_lvt_5f036dd99455cb8adc9de73e2f052f72=1464224395,1464246347,1464763170; ECS[user_id]=12; ECS[password]=389c6120cc59c4d251e59111d364fa5f; PHPSESSID=3jkulp4scic4sf61cja3kk1i24; _csrf=05993bfb9706a61c025655498dcbbc771a3556e279d51a433ac20bff0ac7e1cba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22S8SZG2keV7GqdgW84heQQXptyClK3hCm%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;E:\\web\\Mysql\\bin;E:\\server\\mysql\\bin;C:\\Program Files\\TortoiseSVN\\bin;D:\\Program Files\\VisualSVN Server\\bin;D:\\server\\Mysqls\\bin;C:\\Program Files (x86)\\MySQL\\MySQL Server 5.5\\bin;D:\\phpStudy\\php55;E:\\git\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'www.shop.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/shop'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/shop'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'F:/shop/kuaipin/kuaipin1/index.php'
+    'REMOTE_PORT' => '13907'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index'
+    'REQUEST_URI' => '/kuaipin/kuaipin1/?r=index'
+    'SCRIPT_NAME' => '/kuaipin/kuaipin1/index.php'
+    'PHP_SELF' => '/kuaipin/kuaipin1/index.php'
+    'REQUEST_TIME_FLOAT' => 1466471082.97
+    'REQUEST_TIME' => 1466471082
+]
