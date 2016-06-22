@@ -48,7 +48,7 @@ class KpUser extends \yii\db\ActiveRecord
     {
         return [
             [['birth_date', 'registration_date', 'last_login_date'], 'safe'],
-            [['username', 'user_number', 'password', 'user_Email', 'images', 'academic', 'i_name', 'i_native', 'i_area', 'i_experience', 'iphone', 'title'], 'string', 'max' => 100],
+            [['username', 'user_number', 'password', 'user_email', 'images', 'academic', 'i_name', 'i_native', 'i_area', 'i_experience', 'iphone', 'title'], 'string', 'max' => 100],
             [['i_age', 'i_sex', 'i_demission_start'], 'string', 'max' => 10],
             [['registration_ip', 'last_login_ip'], 'string', 'max' => 16],
         ];

@@ -46,7 +46,7 @@ class KpResume extends \yii\db\ActiveRecord
             [['u_id', 're_status', 're_looks'], 'integer'],
             [['Company_begin_time', 'Company_add_time', 'Project_begin_time', 'Project_add_time', 're_add_time'], 'safe'],
             [['Project_content', 'me_content'], 'string'],
-            [['re_name', 'position_name', 'project_name', 'Major_name', 'Works_href', 'Works_title'], 'string', 'max' => 100],
+            [['re_name', 'position_name', 'project_name','Works_href', 'Works_title'], 'string', 'max' => 100],
             [['re_ecpect_job'], 'string', 'max' => 255],
             [['company_name'], 'string', 'max' => 200],
         ];
