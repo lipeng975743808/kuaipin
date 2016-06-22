@@ -27,7 +27,7 @@
 								foreach($value['son'] as $keys => $values){
 						 ?>
 
-				<a href="h/jobs/list_Java?labelWords=label"><?php echo $values['w_name'] ?></a>
+				<a href="index.php?r=index/search"><?php echo $values['w_name'] ?></a>
 					<?php 
 				}
 				}
@@ -39,7 +39,7 @@
 					   	 ?>
 					   		<dl class="reset">
 					        	<dt>
-					        		<a href="h/jobs/list_后端开发?labelWords=label"><?php echo $value['w_name'] ?></a>
+					        		<a href="index.php?r=index/search"><?php echo $value['w_name'] ?></a>
 					        	</dt>
 					        	
 						        <dd>
@@ -47,7 +47,7 @@
 					        		foreach($value['son'] as $keys => $values){
 					        	 ?>
 							        
-							        <a href="h/jobs/list_Node.js?labelWords=label"><?php echo $values['w_name'] ?></a>
+							        <a href="index.php?r=index/search"><?php echo $values['w_name'] ?></a>
 							        <?php 
 							    	}
 							     ?>
@@ -175,7 +175,7 @@
 	            	<li class="clearfix">
 		            	<div class="hot_pos_l">
 			                <div class="mb10">
-			                    <a href="h/jobs/147822.html" target="_blank"><?php echo $v['cj_name'] ?></a>
+			                    <a href="index.php?r=company_list/show&id=<?php echo $v['cj_id'] ?>" target="_blank"><?php echo $v['cj_name'] ?></a>
 			                            &nbsp;
 			                    <span class="c9">[<?php echo $v['ci_city'] ?>]</span>
 			                </div>
@@ -190,7 +190,7 @@
 			            </div>
 						<div class="hot_pos_r">
 						    <div class="mb10 recompany">
-						    	<a href="h/c/399.html" target="_blank"><?php echo $v['ci_name'] ?></a>
+						    	<a href="index.php?r=company_list/home&id=<?php echo $v['ci_id'] ?>" target="_blank"><?php echo $v['ci_name'] ?></a>
 						    </div>
 						        <span><em class="c7">领域：</em> 移动互联网</span>
 						        <span><em class="c7">创始人：</em>陈桦</span>
@@ -215,7 +215,7 @@
 	            		    <li class="clearfix">
 		            	<div class="hot_pos_l">
 			                <div class="mb10">
-			                    <a href="h/jobs/147822.html" target="_blank"><?php echo $v['cj_name'] ?></a>
+			                    <a href="index.php?r=company_list/show&id=<?php echo $v['cj_id'] ?>" target="_blank"><?php echo $v['cj_name'] ?></a>
 			                            &nbsp;
 			                    <span class="c9">[<?php echo $v['ci_city'] ?>]</span>
 			                </div>
@@ -230,7 +230,7 @@
 			            </div>
 						<div class="hot_pos_r">
 						    <div class="mb10 recompany">
-						    	<a href="h/c/399.html" target="_blank"><?php echo $v['ci_name'] ?></a>
+						    	<a href="index.php?r=company_list/home&id=<?php echo $v['ci_id'] ?>" target="_blank"><?php echo $v['ci_name'] ?></a>
 						    </div>
 						        <span><em class="c7">领域：</em> 移动互联网</span>
 						        <span><em class="c7">创始人：</em>陈桦</span>

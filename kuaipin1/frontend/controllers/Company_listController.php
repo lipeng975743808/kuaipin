@@ -21,6 +21,12 @@ class Company_listController extends Controller
 	public function actionIndex(){
 		return $this->render('index.html');
 	}
+/**
+* 公司
+*/
+    public function actionIndexs(){
+        return $this->render('myhome.html');
+    }
 
     function actionHead()
     {
@@ -46,5 +52,17 @@ class Company_listController extends Controller
             }
         }
         return $arr;
+    }
+    /**
+     * 职位详情页
+     */
+    public function actionShow(){
+        return $this->render('content.html');
+    }
+    /**
+     * 公司详情页
+     */
+    public function actionHome(){
+        return $this->render('home.html');
     }
 }

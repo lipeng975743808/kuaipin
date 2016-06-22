@@ -61,4 +61,10 @@ class IndexController extends Controller
         }
         return $arr;
     }
+    /**
+     * 搜索职位
+     */
+    public function actionSearch(){
+        return $this->render('list.html');
+    }
 }
