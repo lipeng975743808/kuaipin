@@ -6,6 +6,7 @@ use yii\web\Controller;
 use app\models\KpUser;
 use app\models\KpCompanyRegister;
 
+
 /**
  * Index controller
  */
@@ -63,6 +64,15 @@ class Company_listController extends Controller
      * 公司详情页
      */
     public function actionHome(){
+//        $request = Yii::$app->request;
+//        $cid=$request->get('cid'); ;
+//        $customer = KpCompanyInfo::find()
+//
+//            ->where(['ci_id' => $cid])
+//            ->one();
+
+
+
         return $this->render('home.html');
     }
 }
