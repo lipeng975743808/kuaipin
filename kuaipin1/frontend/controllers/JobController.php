@@ -78,19 +78,21 @@ public function actionAdd()
 *  有效职位
 */
 	public function actionPositions(){
-        //通过session 获取用户id 
-        // $ci_id=$_SESSION['ci_id'];
-        $ci_id=1;
+        //通过session 获取用户id
+        $cr_id=Yii::$app->session['user'];
+        $sql="select * from kp_company_info where cr_id=$cr_id";
+        $row=Yii::$app->db->createCommand($sql)->queryOne();
+        $ci_id=$row['ci_id'];
         //通过session id 查询职位表
         // $sql="select * from kp_company_job where ci_id=$ci_id";
-        $rows = (new \yii\db\Query())
-                ->select(['*'])
-                ->from('kp_company_job')
-                ->innerJoin('kp_company_info',' kp_company_job.ci_id=kp_company_info.ci_id')
-                ->where("kp_company_job.ci_id='$ci_id'&kp_company_job.wire=1")
-                ->all();//->one()出来直接是数组，
-        // $arr = Yii::$app->db->createCommand($sql)->queryAll();
-		return $this->render('positions.html',['ar'=>$rows]);
+        $rows = (new\yii\db\Query())
+            ->select(['*'])
+            ->from('kp_company_job')
+            ->innerJoin('kp_company_info',' kp_company_job.ci_id=kp_company_info.ci_id')
+            ->where("kp_company_job.ci_id='$ci_id'&kp_company_job.wire=1")
+            ->all();//->one()出来直接是数组，
+        $count=count($rows);
+        return $this->render('positions.html',['ar'=>$rows,'counts'=>$count]);
 	} 
     /**修改在线职位*/
     public function actionUpdatewire()
@@ -117,7 +119,6 @@ public function actionAdd()
         {
             echo 0;
         }
-
     }
     public function actionDeletes()
     {
@@ -134,11 +135,195 @@ public function actionAdd()
             echo 0;
         }
     }
+
+    public function actionRefresh()
+    {
+        $request=Yii::$app->request;
+        $cj_id=$request->get('cj_id');
+        //获取当前时间戳
+        $time=time();
+        $sql="select * from kp_company_job where cj_id=$cj_id";
+        $row=Yii::$app->db->createCommand($sql)->queryOne();
+
+        //获取本条数据上次刷新的时间戳
+        $times=$row['times'];
+        //判断如果时间戳为空那么就进行入库
+        if(empty($times))
+        {
+            $sql="update kp_company_job set times=$time where cj_id=$cj_id";
+            $rows=Yii::$app->db->createCommand($sql)->execute();
+            die;
+        }
+        /*
+          *如果有值的话就拿数据库的值跟当前时间戳比较如果大于七天那么就允许刷新 否则给出提示
+        */
+        else
+        {
+            //获取上次刷新时的时间
+            $cj_add_time=$row['times'];
+            $a=60*60*24*7;
+            $timess=strtotime(date('Y-m-d H:i:s',time()+60*60*24*7))-strtotime(date('Y-m-d H:i:s',time()));
+            if($time-$cj_add_time<$timess)
+            {
+                echo 1;
+                die;
+            }
+            else
+            {
+                $sql="update kp_company_job set times=$time where cj_id=$cj_id";
+                $rows=Yii::$app->db->createCommand($sql)->execute();
+            }
+        }
+    }
+
+    public function actionUpdates()
+    {
+        $sql="select * from kp_work";
+        $arr=Yii::$app->db->createCommand($sql)->queryAll();
+        $ar=$this->actionCate($arr,0,0);
+        $request=Yii::$app->request;
+        $cj_id=$request->get('id');
+        $sql="select * from kp_company_job where cj_id=$cj_id";
+        $row=Yii::$app->db->createCommand($sql)->queryOne();
+        // print_R($row);die;
+        return $this->render('updates.html',['ar'=>$row,'a'=>$ar]);
+    }
+
+    //修改有效职位
+    public function actionUpdatezw()
+    {
+        $request=Yii::$app->request;
+        $cj_id=$request->post('cj_id');
+        $cj_name=$request->post('cj_name');
+        $cj_type=$request->post('cj_type');
+        $cj_character=$request->post('cj_character');
+        $cj_low_money=$request->post('cj_low_money');
+        $cj_high_money=$request->post('cj_high_money');
+        $cj_city=$request->post('cj_city');
+        $cj_experience=$request->post('cj_experience');
+        $cj_degree=$request->post('cj_degree');
+        $cj_positionAdvantage=$request->post('cj_positionAdvantage');
+        $cj_position=$request->post('cj_position');
+        $cj_rec_email=$request->post('cj_rec_email');
+        $sql="update kp_company_job set cj_name='$cj_name',cj_type='$cj_type',cj_character='$cj_character',cj_low_money='$cj_low_money',cj_high_money='$cj_high_money',cj_city='$cj_city',cj_experience='$cj_experience',cj_positionAdvantage='$cj_positionAdvantage',cj_position='$cj_position',cj_rec_email='$cj_rec_email' where cj_id=$cj_id";
+        $ar=Yii::$app->db->createCommand($sql)->execute();
+        if ($ar) {
+            echo "<script>alert('操作成功');location.href='index.php?r=job/positions'</script>";
+        }
+        else
+        {
+            echo 0;
+        }
+    }
+
+
+
+
 /**
 *  已下线职位
 */
 	public function actionNopositions(){
-		return $this->render('positions.html');	
+        //通过session 获取用户id
+        $cr_id=Yii::$app->session['user'];
+        $sql="select * from kp_company_info where cr_id=$cr_id";
+        $row=Yii::$app->db->createCommand($sql)->queryOne();
+        $ci_id=$row['ci_id'];
+        //通过session id 查询职位表
+        // $sql="select * from kp_company_job where ci_id=$ci_id";
+        $rows = (new\yii\db\Query())
+            ->select(['*'])
+            ->from('kp_company_job')
+            ->innerJoin('kp_company_info',' kp_company_job.ci_id=kp_company_info.ci_id')
+            ->where("kp_company_job.ci_id='$ci_id'&kp_company_job.wire=0")
+            ->all();//->one()出来直接是数组，
+        $count=count($rows);
+        return $this->render('positions1.html',['ar'=>$rows,'counts'=>$count]);
+    }
+
+    /**修改在线职位*/
+    public function actionUpdatewire1()
+    {
+        $request=Yii::$app->request;
+        //接受修改在线的字段
+        $wire=$request->get('wi');
+        //接受需要修改的id
+        $cj_id=$request->get('cj_id');
+
+        // $post=new Kp_Company_job;
+        // $post->wire='0';
+        // $post->save();
+
+        // $customer =Kp_Company_job::findOne($cj_id);
+        // $customer->wire = '0';
+        // $customer->save();
+        $sql="update kp_company_job set wire=1 where cj_id=$cj_id";
+        $res=Yii::$app->db->createCommand($sql)->execute();
+        if ($res) {
+            echo 1;
+        }
+        else
+        {
+            echo 0;
+        }
+
+    }
+
+    public function actionDeletes1()
+    {
+        $request=Yii::$app->request;
+        $cj_id=$request->get('id');
+        $sql="delete from kp_company_job where cj_id=$cj_id";
+        $res=Yii::$app->db->createCommand($sql)->execute();
+        if($res)
+        {
+            echo 1;
+        }
+        else
+        {
+            echo 0;
+        }
+    }
+
+    public function actionUpdates1()
+    {
+
+        $sql="select * from kp_work";
+        $arr=Yii::$app->db->createCommand($sql)->queryAll();
+        $ar=$this->actionCate($arr,0,0);
+        $request=Yii::$app->request;
+        $cj_id=$request->get('id');
+        $sql="select * from kp_company_job where cj_id=$cj_id";
+        $row=Yii::$app->db->createCommand($sql)->queryOne();
+        // print_R($row);die;
+        return $this->render('updates.html',['ar'=>$row,'a'=>$ar]);
+
+    }
+
+    //修改有效职位
+    public function actionUpdatezw1()
+    {
+        $request=Yii::$app->request;
+        $cj_id=$request->post('cj_id');
+        $cj_name=$request->post('cj_name');
+        $cj_type=$request->post('cj_type');
+        $cj_character=$request->post('cj_character');
+        $cj_low_money=$request->post('cj_low_money');
+        $cj_high_money=$request->post('cj_high_money');
+        $cj_city=$request->post('cj_city');
+        $cj_experience=$request->post('cj_experience');
+        $cj_degree=$request->post('cj_degree');
+        $cj_positionAdvantage=$request->post('cj_positionAdvantage');
+        $cj_position=$request->post('cj_position');
+        $cj_rec_email=$request->post('cj_rec_email');
+        $sql="update kp_company_job set cj_name='$cj_name',cj_type='$cj_type',cj_character='$cj_character',cj_low_money='$cj_low_money',cj_high_money='$cj_high_money',cj_city='$cj_city',cj_experience='$cj_experience',cj_positionAdvantage='$cj_positionAdvantage',cj_position='$cj_position',cj_rec_email='$cj_rec_email' where cj_id=$cj_id";
+        $ar=Yii::$app->db->createCommand($sql)->execute();
+        if ($ar) {
+            echo "<script>alert('操作成功');location.href='index.php?r=job/positions1'</script>";
+        }
+        else
+        {
+            echo 0;
+        }
     }
 
     function actionHead()

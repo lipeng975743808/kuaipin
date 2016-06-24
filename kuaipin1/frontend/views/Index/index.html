@@ -27,7 +27,7 @@
 								foreach($value['son'] as $keys => $values){
 						 ?>
 
-				<a href="index.php?r=index/search"><?php echo $values['w_name'] ?></a>
+				<a href="index.php?r=index/search&w_name=<?php echo $values['w_name'] ?>"><?php echo $values['w_name'] ?></a>
 					<?php 
 				}
 				}
@@ -175,7 +175,7 @@
 	            	<li class="clearfix">
 		            	<div class="hot_pos_l">
 			                <div class="mb10">
-			                    <a href="index.php?r=company_list/show&jid=<?php echo $v['cj_id'] ?>" target="_blank"><?php echo $v['cj_name'] ?></a>
+			                    <a href="index.php?r=company_list/show&id=<?php echo $v['cj_id'] ?>" target="_blank"><?php echo $v['cj_name'] ?></a>
 			                            &nbsp;
 			                    <span class="c9">[<?php echo $v['ci_city'] ?>]</span>
 			                </div>

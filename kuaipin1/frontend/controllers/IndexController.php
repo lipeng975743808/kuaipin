@@ -65,6 +65,42 @@ class IndexController extends Controller
      * 搜索职位
      */
     public function actionSearch(){
-        return $this->render('list.html');
+        $request=Yii::$app->request;
+        $w_name=$request->get('w_name');
+        $row= (new\yii\db\Query())
+            ->select(['*'])
+            ->from('kp_company_job')
+            ->innerJoin('kp_company_info',' kp_company_job.ci_id=kp_company_info.ci_id')
+            ->innerJoin('kp_company_people','kp_company_people.ci_id=kp_company_info.ci_id')
+            ->where("kp_company_job.cj_name like '%$w_name%' and kp_company_info.ci_id=kp_company_people.ci_id")
+            ->all();//->one()出来直接是数组
+        //获取当前页
+        $p=empty($_GET['p']) ? 1 : $_GET['p'];
+        //设置每页条数
+        $size=1;
+        //获取总条数
+        $num=count($row);
+        //获取总页数
+        $pages=ceil($num/$size);
+        //计算偏移量
+        $pyl=($p-1)*$size;
+        //上一页 下一页
+        $up=$p-1<=1 ? 1 : $p-1;
+        $down=$p+1  >=$pages ? $pages : $p+1;
+        $str='';
+        $str.='<a href="javascript:onclick=pager(1)">首页</a>';
+        $str.='<a href="javascript:onclick=pager('.$up.')">上一页</a>';
+        $str.='<a href="javascript:onclick=pager('.$down.')">下一页</a>';
+        $str.='<a href="javascript:onclick=pager('.$pages.')">尾页</a>';
+        $rows = (new\yii\db\Query())
+            ->select(['*'])
+            ->from('kp_company_job')
+            ->innerJoin('kp_company_info',' kp_company_job.ci_id=kp_company_info.ci_id')
+            ->innerJoin('kp_company_people','kp_company_people.ci_id=kp_company_info.ci_id')
+            ->offset('$pyl')
+            ->limit('1')
+            ->where("kp_company_job.cj_name like '%$w_name%' and kp_company_info.ci_id=kp_company_people.ci_id")
+            ->all();//->one()出来直接是数组
+        return $this->render('list.html',['arr'=>$rows,'str'=>$str]);
     }
 }
